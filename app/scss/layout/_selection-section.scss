@@ -1,5 +1,6 @@
 .selection-section {
     padding-top: 135px;
+    padding-bottom: 0;
     &__grid {
         @include flex(row, flex-start, center);
     }

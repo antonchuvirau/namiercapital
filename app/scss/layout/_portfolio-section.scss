@@ -1,4 +1,5 @@
 .portfolio-section {
+    padding: 0;
     &__grid {
         @include flex(row, stretch);
     }
