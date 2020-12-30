@@ -42,6 +42,7 @@
         &-link {
             text-decoration: none;
             color: $white;
+            cursor: pointer;
             &:hover {
                 color: $primary;
             }

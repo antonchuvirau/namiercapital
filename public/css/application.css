@@ -4203,6 +4203,63 @@ h1, h2, h3, h4, h5, h6 {
             right: 0;
             background: url("../img/icons/link-arrow.svg") no-repeat 50%; }
 
+.selection-section {
+  padding-top: 135px; }
+  .selection-section__grid {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -ms-flex-wrap: no-wrap;
+        flex-wrap: no-wrap; }
+  .selection-section__img {
+    position: relative; }
+  .selection-section__item {
+    position: absolute;
+    margin: 0;
+    font-family: "IBM Plex Sans", sans-serif;
+    font-size: 2.4rem;
+    font-weight: 600;
+    line-height: 1.45;
+    color: #023250;
+    width: 100%;
+    max-width: 280px;
+    text-align: right; }
+    .selection-section__item:nth-child(1) {
+      right: calc(100% + 45px);
+      top: 12.5%; }
+    .selection-section__item:nth-child(2) {
+      right: calc(100% + 45px);
+      top: 38%; }
+    .selection-section__item:nth-child(3) {
+      right: calc(100% + 45px);
+      top: 63.5%;
+      max-width: 215px; }
+    .selection-section__item:nth-child(5) {
+      text-align: left;
+      left: calc(100% + 45px);
+      max-width: 310px;
+      top: .5%; }
+    .selection-section__item:nth-child(6) {
+      text-align: left;
+      left: calc(100% + 45px);
+      max-width: 310px;
+      top: 26%; }
+    .selection-section__item:nth-child(7) {
+      text-align: left;
+      left: calc(100% + 45px);
+      top: 51.5%;
+      max-width: 205px; }
+
 .button {
   display: inline-block;
   font-weight: 600;
@@ -4275,7 +4332,8 @@ h1, h2, h3, h4, h5, h6 {
         pointer-events: auto; }
   .navigation__list-link {
     text-decoration: none;
-    color: #fff; }
+    color: #fff;
+    cursor: pointer; }
     .navigation__list-link:hover {
       color: #09B9B9; }
 

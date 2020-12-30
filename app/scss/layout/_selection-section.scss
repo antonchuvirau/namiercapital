@@ -1,0 +1,52 @@
+.selection-section {
+    padding-top: 135px;
+    &__grid {
+        @include flex(row, flex-start, center);
+    }
+    &__img {
+        position: relative;
+    }
+    &__item {
+        position: absolute;
+        margin: 0;
+        font-family: $secondary-font, sans-serif;
+        font-size: 2.4rem;
+        font-weight: 600;
+        line-height: 1.45;
+        color: $secondary;
+        width: 100%;
+        max-width: 280px;
+        text-align: right;
+        &:nth-child(1) {
+            right: calc(100% + 45px);
+            top: 12.5%;
+        }
+        &:nth-child(2) {
+            right: calc(100% + 45px);
+            top: 38%;
+        }
+        &:nth-child(3) {
+            right: calc(100% + 45px);
+            top: 63.5%;
+            max-width: 215px;
+        }
+        &:nth-child(5) {
+            text-align: left;
+            left: calc(100% + 45px);
+            max-width: 310px;
+            top: .5%;
+        }
+        &:nth-child(6) {
+            text-align: left;
+            left: calc(100% + 45px);
+            max-width: 310px;
+            top: 26%;
+        }
+        &:nth-child(7) {
+            text-align: left;
+            left: calc(100% + 45px);
+            top: 51.5%;
+            max-width: 205px;
+        }
+    }
+}
