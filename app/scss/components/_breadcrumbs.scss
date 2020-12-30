@@ -23,4 +23,15 @@
             opacity: .8;
         }
     }
+    &_dark {
+        & a {
+            color: $primary;
+            &::after {
+                background: icon('breadcrumbs-arrow-dark.svg') no-repeat 50%;
+            }
+        }
+        & p {
+            color: rgba($black, .6);
+        }
+    }
 }

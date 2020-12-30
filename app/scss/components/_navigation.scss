@@ -48,4 +48,33 @@
             }
         }
     }
+    &_dark {
+        & .navigation {
+            &__list {
+                &-link {
+                    color: $black;
+                    &:hover {
+                        color: $primary;
+                    }
+                }
+                &-item {
+                    &_children {
+                        & > a {
+                            &::after {
+                                background: icon('arrow-down-dark.svg') no-repeat center 5px / 10px auto;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        & .sub-menu {
+            &__link {
+                color: $black;
+                &:hover {
+                    color: $primary;
+                }
+            }
+        }
+    }
 }

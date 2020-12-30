@@ -12,15 +12,23 @@
         color: $white;
         font-size: 8.8rem;
         line-height: 1.1;
+        &_dark {
+            color: $black;
+        }
     }
     &__text {
         margin-top: 50px;
-        max-width: 620px;
+        max-width: 640px;
         & p {
             margin: 0;
             font-size: 2.4rem;
             color: rgba($white, .6);
             line-height: 1.5;
+        }
+        &_dark {
+            & p {
+                color: $black;
+            }
         }
     }
 }
