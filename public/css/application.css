@@ -3863,6 +3863,8 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 5.2rem;
     color: #fff;
     line-height: 1; }
+    .section__header-title_black {
+      color: #222; }
 
 .portfolio-section__grid {
   display: -webkit-box;
@@ -4134,6 +4136,72 @@ h1, h2, h3, h4, h5, h6 {
           top: 10px; }
         .process-section__item-text li:last-child {
           margin-bottom: 0; }
+
+.investor-section {
+  background: #F6FBFF;
+  padding: 135px 0;
+  padding-bottom: 160px; }
+  .investor-section__img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover; }
+  .investor-section__content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -ms-flex-wrap: no-wrap;
+        flex-wrap: no-wrap;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    padding: 0 100px; }
+    .investor-section__content-title {
+      margin: 0;
+      font-family: "IBM Plex Sans";
+      font-weight: 600;
+      font-size: 3.6rem;
+      line-height: 1.2;
+      margin-bottom: 30px; }
+    .investor-section__content-text {
+      margin-bottom: 30px; }
+      .investor-section__content-text:last-child {
+        margin-bottom: 0; }
+      .investor-section__content-text p {
+        margin: 0;
+        line-height: 1.45;
+        color: rgba(34, 34, 34, 0.7);
+        margin-bottom: 20px; }
+        .investor-section__content-text p:last-child {
+          margin-bottom: 0; }
+      .investor-section__content-text a {
+        text-decoration: none;
+        line-height: 1.45;
+        color: #09B9B9; }
+        .investor-section__content-text a:hover {
+          opacity: .8; }
+        .investor-section__content-text a:not([target="_blank"]) {
+          position: relative;
+          padding-right: 30px; }
+          .investor-section__content-text a:not([target="_blank"])::after {
+            content: '';
+            position: absolute;
+            width: 25px;
+            height: 25px;
+            top: 50%;
+            margin-top: -12.5px;
+            right: 0;
+            background: url("../img/icons/link-arrow.svg") no-repeat 50%; }
 
 .button {
   display: inline-block;
