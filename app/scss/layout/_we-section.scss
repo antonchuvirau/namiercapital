@@ -1,0 +1,52 @@
+.we-section {
+    background: image('we@2x.jpg') no-repeat center bottom / cover;
+    &__item {
+        height: 260px;
+        width: 100%;
+        padding: 45px 50px;
+        &-text {
+            margin: 0;
+            line-height: 1.5;
+            color: rgba($black, .7);
+        }
+    }
+    &__col {
+        &:nth-child(1) {
+            & .we-section {
+                &__item {
+                    background: image('we-1@2x.jpg') no-repeat 50% / cover;
+                    &-text {
+                        max-width: 205px;
+                    }
+                }
+            }
+        }
+        &:nth-child(2) {
+            & .we-section {
+                &__item {
+                    background: image('we-2@2x.jpg') no-repeat 50% / cover;
+                    &-text {
+                        max-width: 340px;
+                    }
+                }
+            }
+        }
+        &:nth-child(3) {
+            & .we-section {
+                &__item {
+                    background: image('we-3@2x.jpg') no-repeat 50% / cover;
+                    &-text {
+                        max-width: 425px;
+                    }
+                }
+            }
+        }
+        &:nth-child(4) {
+            & .we-section {
+                &__item {
+                    background: image('we-4@2x.jpg') no-repeat 50% / cover;
+                }
+            }
+        }
+    }
+}

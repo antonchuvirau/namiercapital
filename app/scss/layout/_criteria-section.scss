@@ -1,0 +1,45 @@
+.criteria-section {
+    &__wrapper {
+        padding: 60px 0;
+        border-bottom: 2px solid $primary;
+        &:first-child {
+            padding-top: 0;
+        }
+        &:last-child {
+            padding-bottom: 0;
+            border-bottom: none;
+            & .criteria-section {
+                &__col {
+                    &::before {
+                        top: auto;
+                        bottom: 100%;
+                    }
+                }
+            }
+        }
+    }
+    &__col {
+        @include flex(row, center);
+        position: relative;
+        &::before {
+            content: '';
+            position: absolute;
+            width: 2px;
+            height: 60px;
+            background: $primary;
+            top: 100%;
+            left: 54px;
+        }
+        &-icon {
+            flex-shrink: 0;
+            margin-right: 25px;
+        }
+        &-name {
+            margin: 0;
+            font-weight: 600;
+            line-height: 1.25;
+            color: $secondary;
+            max-width: 245px;
+        }
+    }
+}

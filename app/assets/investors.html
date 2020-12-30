@@ -1,212 +1,386 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Namier Capital / Strategic advisory</title>
-        <meta name="Namier Capital" content="Namier Capital corporate website">
-        <link rel="stylesheet" href="css/main.css">
-        <link rel="stylesheet" href="css/grid.css">
-        <link rel="stylesheet" href="css/pd-mr.css">
-        <link rel="stylesheet" href="css/investors.css">
-    </head>
+<head>
+  <title>Namier Capital</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="keywords" content="">
+  <meta name="description" content="">
+  <meta name="format-detection" content="telephone=no">
+  <!-- favicon -->
+  <link rel="icon" type="image/png" href="" sizes="16x16">
+  <link rel="icon" type="image/png" href="" sizes="32x32">
+  <link rel="icon" type="image/png" href="" sizes="96x96">
+  <link rel="apple-touch-icon" sizes="152x152" href="">
+  <!-- favicon -->
+  <link href="css/application.css" rel="stylesheet">
+</head>
+
 <body>
-    
-<!-- 1st Blok -->
-    
-<div class="investors-bg">    
-<div class="container">  
-<div class="topnav" id="myTopnav">
-<a href="index.html"><img height="46px" src="img/Logo.svg"></a>
-<div class="txt-menu"><a href="javascript:void(0);" class="icon" onclick="myFunction()"><img src="img/menu.svg"></a>
-  <div class="dropdown">
-    <button class="dropbtn">Services&nbsp;&nbsp;<i class="down"></i>
-    </button>
-      
-    <div class="dropdown-content">
-      <a href="growth-companies.html">&nbsp;&nbsp;&nbsp;Growth companies</a>
-      <a href="corporate-clients.html">&nbsp;&nbsp;&nbsp;Corporate clients</a>
-      <a href="investors.html">&nbsp;&nbsp;&nbsp;Investors</a>
+  <!-- BEGIN header -->
+  <div class="wrapper template-wrapper" style="background-image: url('img/template-3@2x.jpg');">
+    <header class="header header_sticky">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-6 col-xl-2 header__col">
+            <a href="#" class="header__logo">
+              <img class="header__logo-img" src="img/logo.svg" alt="alt">
+            </a>
+          </div>
+          <div class="col-6 d-xl-none header__mobile-option align-self-start">
+            <button type="button" class="header__mobile-menu-button">
+              <svg width="36" height="24" fill="none">
+                <path d="M0 2H36" stroke="white" stroke-width="3" />
+                <path d="M0 12H36" stroke="white" stroke-width="3" />
+                <path d="M0 22H36" stroke="white" stroke-width="3" />
+              </svg>
+            </button>
+          </div>
+          <div class="col-12 col-xl-10 header__col header__grid">
+            <nav class="navigation header__navigation">
+              <ul class="list navigation__list">
+                <li class="navigation__list-item"><a href="about.html" class="navigation__list-link">About</a></li>
+                <li class="navigation__list-item navigation__list-item_children">
+                  <a name="current" class="navigation__list-link">Services</a>
+                  <ul class="list sub-menu">
+                    <li class="sub-menu__item"><a href="growth-companies.html" class="sub-menu__link">Growth
+                        companies</a></li>
+                    <li class="sub-menu__item"><a href="corporate-clients.html" class="sub-menu__link">Corporate
+                        clients</a></li>
+                    <li class="sub-menu__item"><a href="investors.html" class="sub-menu__link">Investors</a></li>
+                  </ul>
+                </li>
+                <li class="navigation__list-item"><a href="portfolio.html" class="navigation__list-link">Portfolio</a>
+                </li>
+                <li class="navigation__list-item"><a href="team.html" class="navigation__list-link">Team</a></li>
+                <li class="navigation__list-item"><a href="impact.html" class="navigation__list-link">Impact</a></li>
+                <li class="navigation__list-item"><a href="media.html" class="navigation__list-link">News & Webinars</a>
+                </li>
+                <li class="navigation__list-item"><a href="contact.html" class="navigation__list-link">Contact</a></li>
+              </ul>
+            </nav>
+            <a href="https://www.linkedin.com/company/namier-capital-partners" target="_blank" rel="noopener noreferrer"
+              class="header__social-link">
+              <svg width="24" height="24" fill="none">
+                <path
+                  d="M12 0C5.3736 0 0 5.3736 0 12C0 18.6264 5.3736 24 12 24C18.6264 24 24 18.6264 24 12C24 5.3736 18.6264 0 12 0ZM8.51294 18.1406H5.59039V9.34808H8.51294V18.1406ZM7.05176 8.14746H7.03271C6.052 8.14746 5.41772 7.47235 5.41772 6.6286C5.41772 5.76581 6.07141 5.10938 7.07117 5.10938C8.07092 5.10938 8.68616 5.76581 8.7052 6.6286C8.7052 7.47235 8.07092 8.14746 7.05176 8.14746ZM19.051 18.1406H16.1288V13.4368C16.1288 12.2547 15.7057 11.4485 14.6483 11.4485C13.8409 11.4485 13.3601 11.9923 13.1488 12.5173C13.0715 12.7051 13.0527 12.9677 13.0527 13.2305V18.1406H10.1303C10.1303 18.1406 10.1686 10.173 10.1303 9.34808H13.0527V10.593C13.441 9.9939 14.1359 9.14172 15.6865 9.14172C17.6093 9.14172 19.051 10.3984 19.051 13.099V18.1406Z"
+                  fill="white" />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="breadcrumbs template-wrapper__breadcrumbs">
+            <a href="#">Services</a>
+            <p>Investors</p>
+          </div>
+          <h1 class="template-wrapper__title">Our investor network</h1>
+          <div class="template-wrapper__text">
+            <p>At Namier, we are building a universe of likeminded, private and institutional investors who are determined to shape the future by investing alongside Namier</p>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
-    <a href="about.html">About</a>
-  <a href="portfolio.html">Portfolio</a>
-      <a href="team.html">Team</a>
-      <a href="impact.html">Impact</a>
-      <a href="news.html">News&nbsp;&&nbsp;Webinars</a>
-      <a href="contacts.html">Contacts</a>
-      <a href="https://www.linkedin.com/company/namier-capital-partners" target="_blank"><img class="liin" src="img/linkedin.svg" height="24px"></a>
-</div></div></div>
-<div class="container">  
-    <p class="txt-small">Services&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="txt-op"><i class="right"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Investors</span></p>
-        <h1>Our investor network</h1>
-        <p class="txt-white">At Namier, we are building a universe of likeminded, private and institutional investors who are determined to shape the future by investing alongside Namier</p>
-    </div>
-</div>
-    
-<!-- 2nd block -->
-    
-<div class="who">
-    <div class="container">
-        <div class="h2-black">Who we are</div>
-    <div class="row">
-        <div class="col-lg-4 themed-grid-col investors-content-1"><p class="txt-small">Digital first London-based advisory for growth companies.</p></div>
-      <div class="col-lg-8 themed-grid-col investors-content-2"><p class="txt-small">We help companies to accelerate growth and prepare for commercialisation by providing corporate finance services and attracting strategic investors.</p></div>
-    </div>
+  <!-- END header -->
+  <!-- BEGIN main -->
+  <main class="main template investors-template">
+    <section class="section we-section">
+      <div class="container">
         <div class="row">
-        <div class="col-lg-8 themed-grid-col investors-content-3"><p class="txt-small">We apply an internally developed matrix and a scorecard to de-risk our portfolio; our network of industrial advisors provides an additional selection filter to choose best-in-class opportunities.</p></div>
-      <div class="col-lg-4 themed-grid-col investors-content-4"><p class="txt-small">We source investment opportunities from the leading research institutes and universities across the UK and Europe, e.g. Turing Institute, Pasteur Institute, Imperial College London, University of Oxford and others.</p></div>
-    </div>
-    </div>
-</div>
-    
-<!-- 3rd block -->
-    
-<div class="criteria">
-    <div class="container">
-    <div class="h2-black">Our selection criteria</div>
-
-    <div class="row criteria-1">
-      <div class="col-md-1 themed-grid-col"><img src="img/investors/icons/ico-1-1.svg"></div>
-        <div class="col-md-3 themed-grid-col criteria-r1">Quickly scalable</div>
-      <div class="col-md-1 themed-grid-col"><img src="img/investors/icons/ico-2-1.svg"></div>
-        <div class="col-md-3 themed-grid-col criteria-r1">Exceptionally strong and knowledgeable founders</div>
-      <div class="col-md-1 themed-grid-col"><img src="img/investors/icons/ico-3-1.svg"></div>
-        <div class="col-md-3 themed-grid-col criteria-r1">Strong & rapid ROCE with clear pathway to break-even and growth acceleration</div>
-    </div>
-    <div class="row criteria-1">
-      <div class="col-md-1 themed-grid-col"><img src="img/investors/icons/ico-1-2.svg"></div>
-        <div class="col-md-3 themed-grid-col criteria-r1">Clear pathway to add value by providing strategic advice & access to Namier network</div>
-      <div class="col-md-1 themed-grid-col"><img src="img/investors/icons/ico-2-2.svg"></div>
-        <div class="col-md-3 themed-grid-col criteria-r1">Disruptive technology with a great potential and necessary IP protection in place</div>
-      <div class="col-md-1 themed-grid-col"><img src="img/investors/icons/ico-3-2.svg"></div>
-        <div class="col-md-3 themed-grid-col criteria-r1">Readily understandable proposition</div>
-    </div>
-    </div>
-</div>
-    
-<!-- 4rd block -->
-    
-<div class="industry">
-    <div class="container">
-    <div class="row mb-3 padd-5 padd-3">
-      <div class="col-md-10 themed-grid-col"><h2>Industry matrix</h2></div>
-        <div class="col-md-2 themed-grid-col sm-right"><a href="#" class="sm-right">See&nbsp;our&nbsp;portfolio&nbsp;<img src="img/arrow-right.svg"></a></div>
-    </div>
-        
-    <div class="row">
-        <div class="col-md-3 themed-grid-col industry-1"><img src="img/investors/icons/industry-1.svg">Quickly scalable</div>
-        <div class="col-md-3 themed-grid-col industry-2"><img src="img/investors/icons/industry-2.svg">Logistics / Supply
-Chain</div>
-        <div class="col-md-3 themed-grid-col industry-3"><img src="img/investors/icons/industry-3.svg">Media</div>
-        <div class="col-md-3 themed-grid-col industry-4"><img src="img/investors/icons/industry-4.svg">EdTech</div>
-    </div>
-        
-    <div class="row">
-        <div class="col-md-3 themed-grid-col industry-5"><img src="img/investors/icons/industry-5.svg">Digital Healthcare and Connected Care</div>
-        <div class="col-md-3 themed-grid-col industry-6"><img src="img/investors/icons/industry-6.svg">Renewables, Distributed Energy, Energy as a Service</div>
-        <div class="col-md-3 themed-grid-col industry-7"><img src="img/investors/icons/industry-7.svg">Consumer Healthcare
-and Nutrition</div>
-        <div class="col-md-3 themed-grid-col industry-8"><img src="img/investors/icons/industry-8.svg">Advanced Engineering,
-Robotics, Sensors</div>
-    </div>
-
-
-    </div>
-</div>
-
-<!-- 5rd block -->
-    
-<div class="investor">
-    <div class="container">
-        <div class="h2-black">Invest with us</div> <p class="txt-small">Our portfolio companies are funded by a select number of Family Offices and VC funds, as well as Investor Club members.</p><br/>
-    <div class="row">
-        <div class="col-lg-6 themed-grid-col investor-content"><h3>Investor Club</h3>
-            <p class="txt-small">A ”first look” into fundraising opportunities in disruptive tech investments</p>
-            <p class="txt-small">Access to senior advisors and to due diligence materials</p>
-            <p class="txt-small">Opportunity to join, and interact with a community of other like-minded investors</p>
-            <p class="txt-small">No hidden fees and no extra charges</p>
-            <p class="txt-small">An opportunity to get involved directly with the companies, if relevant. Flexibility to pick and choose where to invest in</p>
-            <p class="txt-small">Flexibility to pick and choose where to invest in</p>
-            <p class="txt-small">Participation in quarterly investor meetings and webinars</p>
-        </div>
-      <div class="col-lg-6 themed-grid-col investor-img-1"></div>
-    </div>
-    <div class="row">
-        <div class="col-lg-6 themed-grid-col investor-img-2"></div>
-        <div class="col-lg-6 themed-grid-col investor-content"><h3>Institutional Investors</h3><p class="txt-small">Namier Capital has over 2000 connections with Family Offices, Corporate Venture Arms, Government-backed Funds, Venture Capital funds, and large blue-chip corporations in the UK, Europe, Asia, and the US. We are constantly reaching out to new institutions to grow our connections and global investor footprint.</p> </div>
-    </div>      
-    </div>
-</div>
-
-<!-- Contacts -->
-    
-<div class="contacts-bg">
-  <div class="container">
-    <div class="row mb-3 contacts">
-        <div class="col-md-6 themed-grid-col contacts-left">
-            <div class="contact-content"><p class="contact-blockname">CONTACT US</p><p class="contact-title"><br/><br/>Let's get <br/>in touch</p>
-                <div class="contact-text"><img src="img/contacts/mail.svg">&nbsp;&nbsp;info@namiercapital.com</div><br/>
-                <div class="contact-text"><img src="img/contacts/map.svg">&nbsp;&nbsp;167 Fleet Street, London, EC4A 2EA, United Kingdom</div>
-            </div>
-        </div>
-        <div class="col-md-6 themed-grid-col contacts-right">
-            <div class="contact-form">
-                The contact form<br/><br/>
-                    <form class="form">
-                      <input type="text" placeholder="Your name"/>
-                      <input type="text" placeholder="Company name"/>
-                      <input type="text" placeholder="Country"/>
-                      <input type="email" placeholder="E-mail"/>
-                      <textarea placeholder="Your message"></textarea>
-                        <input class="upload" type='file' name="Upload file" placeholder="Upload file"/>
-                      <button>Send</button>
-                    </form>
+          <div class="col-12">
+            <header class="section__header">
+              <h2 class="section__header-title section__header-title_dark">Who we are</h2>
+            </header>
+            <div class="section__grid">
+              <div class="row no-gutters">
+                <div class="col-4 we-section__col">
+                  <div class="we-section__item">
+                    <p class="we-section__item-text">Digital first London-based advisory for growth companies.</p>
                   </div>
+                </div>
+                <div class="col-8 we-section__col">
+                  <div class="we-section__item">
+                    <p class="we-section__item-text">We help companies to accelerate growth and prepare for commercialisation by providing corporate finance services and attracting strategic investors.</p>
+                  </div>
+                </div>
+                <div class="col-8 we-section__col">
+                  <div class="we-section__item">
+                    <p class="we-section__item-text">We apply an internally developed matrix and a scorecard to de-risk our portfolio; our network of industrial advisors provides an additional selection filter to choose best-in-class opportunities.</p>
+                  </div>
+                </div>
+                <div class="col-4 we-section__col">
+                  <div class="we-section__item">
+                    <p class="we-section__item-text">We source investment opportunities from the leading research institutes and universities across the UK and Europe, e.g. Turing Institute, Pasteur Institute, Imperial College London, University of Oxford and others.</p>
+                  </div>
+                </div>
+              </div>
             </div>
+          </div>
         </div>
-    </div>
-</div>
-
-<!-- Footer -->
-    
-<div class="footer">
-  <div class="container">
-
-<div class="botnav">
-<a href="index.html"><img height="46px" src="img/Logo.svg"></a>
-<div class="txt-menu">
-  <div class="dropdown">
-    <button class="dropbtn">Services&nbsp;&nbsp;<i class="down"></i></button>
-      
-    <div class="dropdown-content">
-      <a href="growth-companies.html">&nbsp;&nbsp;&nbsp;Growth companies</a>
-      <a href="corporate-clients.html">&nbsp;&nbsp;&nbsp;Corporate clients</a>
-      <a href="investors.html">&nbsp;&nbsp;&nbsp;Investors</a>
+      </div>
+    </section>
+    <section class="section criteria-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <header class="section__header">
+              <h2 class="section__header-title section__header-title_dark">Our selection criteria</h2>
+            </header>
+            <div class="section__grid">
+              <div class="criteria-section__wrapper">
+                <div class="row">
+                  <div class="col-4 criteria-section__col">
+                    <img class="criteria-section__col-icon" src="img/icons/criteria-icon-1.svg" alt="alt">
+                    <p class="criteria-section__col-name">Quickly scalable</p>
+                  </div>
+                  <div class="col-4 criteria-section__col">
+                    <img class="criteria-section__col-icon" src="img/icons/criteria-icon-2.svg" alt="alt">
+                    <p class="criteria-section__col-name">Exceptionally strong and knowledgeable founders</p>
+                  </div>
+                  <div class="col-4 criteria-section__col">
+                    <img class="criteria-section__col-icon" src="img/icons/criteria-icon-3.svg" alt="alt">
+                    <p class="criteria-section__col-name">Strong & rapid ROCE with clear pathway to break-even and growth acceleration</p>
+                  </div>
+                </div>
+              </div>
+              <div class="criteria-section__wrapper">
+                <div class="row">
+                  <div class="col-4 offset-1 criteria-section__col">
+                    <img class="criteria-section__col-icon" src="img/icons/criteria-icon-4.svg" alt="alt">
+                    <p class="criteria-section__col-name">Clear pathway to add value by providing strategic advice & access to Namier network</p>
+                  </div>
+                  <div class="col-4 criteria-section__col">
+                    <img class="criteria-section__col-icon" src="img/icons/criteria-icon-5.svg" alt="alt">
+                    <p class="criteria-section__col-name">Disruptive technology with a great potential and necessary IP protection in place</p>
+                  </div>
+                  <div class="col-3 criteria-section__col">
+                    <img class="criteria-section__col-icon" src="img/icons/criteria-icon-6.svg" alt="alt">
+                    <p class="criteria-section__col-name">Readily understandable proposition</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section matrix-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <header class="section__header">
+              <h2 class="section__header-title">Industry matrix</h2>
+              <a href="#" class="section__header-link">See our portfolio</a>
+            </header>
+            <div class="section__grid matrix-section__grid">
+              <div class="matrix-section__item">
+                <img src="img/e-mobility@2x.jpg" class="matrix-section__item-img" alt="alt">
+                <div class="matrix-section__item-content">
+                  <img class="matrix-section__item-icon" src="img/icons/e-mobility-icon.svg" alt="alt">
+                  <p class="matrix-section__item-name">E-Mobility</p>
+                </div>
+              </div>
+              <div class="matrix-section__item">
+                <img src="img/logistics@2x.jpg" class="matrix-section__item-img" alt="alt">
+                <div class="matrix-section__item-content">
+                  <img class="matrix-section__item-icon" src="img/icons/logistics-icon.svg" alt="alt">
+                  <p class="matrix-section__item-name">Logistics / Supply Chain</p>
+                </div>
+              </div>
+              <div class="matrix-section__item">
+                <img src="img/media@2x.jpg" class="matrix-section__item-img" alt="alt">
+                <div class="matrix-section__item-content">
+                  <img class="matrix-section__item-icon" src="img/icons/media-icon.svg" alt="alt">
+                  <p class="matrix-section__item-name">Media</p>
+                </div>
+              </div>
+              <div class="matrix-section__item">
+                <img src="img/ed-tech@2x.jpg" class="matrix-section__item-img" alt="alt">
+                <div class="matrix-section__item-content">
+                  <img class="matrix-section__item-icon" src="img/icons/edtech-icon.svg" alt="alt">
+                  <p class="matrix-section__item-name">EdTech</p>
+                </div>
+              </div>
+              <div class="matrix-section__item">
+                <img src="img/healtcare@2x.jpg" class="matrix-section__item-img" alt="alt">
+                <div class="matrix-section__item-content">
+                  <img class="matrix-section__item-icon" src="img/icons/healthcare-icon.svg" alt="alt">
+                  <p class="matrix-section__item-name">Digital Healthcare and Connected Care</p>
+                </div>
+              </div>
+              <div class="matrix-section__item">
+                <img src="img/energy@2x.jpg" class="matrix-section__item-img" alt="alt">
+                <div class="matrix-section__item-content">
+                  <img class="matrix-section__item-icon" src="img/icons/energy-icon.svg" alt="alt">
+                  <p class="matrix-section__item-name">Renewables, Distributed Energy, Energy as a Service</p>
+                </div>
+              </div>
+              <div class="matrix-section__item">
+                <img src="img/nutrition@2x.jpg" class="matrix-section__item-img" alt="alt">
+                <div class="matrix-section__item-content">
+                  <img class="matrix-section__item-icon" src="img/icons/nutrition-icon.svg" alt="alt">
+                  <p class="matrix-section__item-name">Consumer Healthcare and Nutrition</p>
+                </div>
+              </div>
+              <div class="matrix-section__item">
+                <img src="img/engineering@2x.jpg" class="matrix-section__item-img" alt="alt">
+                <div class="matrix-section__item-content">
+                  <img class="matrix-section__item-icon" src="img/icons/engineering-icon.svg" alt="alt">
+                  <p class="matrix-section__item-name">Advanced Engineering, Robotics, Sensors</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section investor-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <header class="section__header investor-section__header">
+              <h2 class="section__header-title section__header-title_dark">Invest with us</h2>
+              <p class="section__header-desc">Our portfolio companies are funded by a select number of Family Offices and VC funds, as well as Investor Club members.</p>
+            </header>
+            <div class="section__grid">
+              <div class="row no-gutters align-items-stretch">
+                <div class="col-6 investor-section__col">
+                  <div class="investor-section__content">
+                    <p class="investor-section__content-title">Investor Club</p>
+                    <div class="investor-section__content-text">
+                      <ul>
+                        <li>A ”first look” into fundraising opportunities in disruptive tech investments</li>
+                        <li>Access to senior advisors and to due diligence materials</li>
+                        <li>Opportunity to join, and interact with a community of other like-minded investors</li>
+                        <li>No hidden fees and no extra charges</li>
+                        <li>An opportunity to get involved directly with the companies, if relevant. Flexibility to pick and choose where to invest in</li>
+                        <li>Flexibility to pick and choose where to invest in</li>
+                        <li>Participation in quarterly investor meetings and webinars</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-6 investor-section__col">
+                  <img src="img/investor-1@2x.jpg" class="investor-section__img" alt="alt">
+                </div>
+                <div class="col-6 investor-section__col">
+                  <img src="img/investor-2@2x.jpg" class="investor-section__img" alt="alt">
+                </div>
+                <div class="col-6 investor-section__col">
+                  <div class="investor-section__content">
+                    <p class="investor-section__content-title">Institutional Investor</p>
+                    <div class="investor-section__content-text">
+                      <p>Namier Capital has over 2000 connections with Family Offices, Corporate Venture Arms, Government-backed Funds, Venture Capital funds, and large blue-chip corporations in the UK, Europe, Asia, and the US. We are constantly reaching out to new institutions to grow our connections and global investor footprint.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section contact-section">
+      <div class="container">
+        <div class="row no-gutters align-items-stretch">
+          <div class="col-6 contact-section__col">
+            <div class="contact-section__info">
+              <p class="contact-section__info-note">Contact us</p>
+              <p class="contact-section__info-title">Let's get in&nbsp;htouch</p>
+              <a class="icon icon-email contact-section__info-text"
+                href="mailto:info@namiercapital.com">info@namiercapital.com</a>
+              <p class="icon icon-address contact-section__info-text">167 Fleet Street, London, EC4A 2EA, United Kingdom
+              </p>
+            </div>
+          </div>
+          <div class="col-6 contact-section__col">
+            <form class="form contact-section__form">
+              <p class="form__title">The contact form</p>
+              <div class="form__grid">
+                <div class="form__row">
+                  <input type="text" name="text" placeholder="Your name" class="form__input">
+                </div>
+                <div class="form__row">
+                  <input type="text" name="text" placeholder="Company name" class="form__input">
+                </div>
+                <div class="form__row">
+                  <input type="text" name="text" placeholder="Country" class="form__input">
+                </div>
+                <div class="form__row">
+                  <input type="text" name="text" placeholder="E-mail" class="form__input">
+                </div>
+                <div class="form__row">
+                  <textarea name="message" placeholder="Your message" class="form__input form__textarea"></textarea>
+                </div>
+                <div class="form__row">
+                  <label for="file" class="form__file">
+                    <input type="file" id="file" class="form__file-input">
+                    Upload file
+                  </label>
+                </div>
+                <button type="submit" class="button form__button">Send</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <!-- END main -->
+  <!-- Begin footer -->
+  <div class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-2 footer__col">
+          <img src="img/logo-white.svg" class="footer__logo" alt="alt">
+        </div>
+        <div class="col-10 footer__col footer__options align-self-center">
+          <nav class="navigation">
+            <ul class="list navigation__list">
+              <li class="navigation__list-item"><a href="#" class="navigation__list-link">About</a></li>
+              <li class="navigation__list-item"><a href="#" class="navigation__list-link">Services</a></li>
+              <li class="navigation__list-item"><a href="#" class="navigation__list-link">Portfolio</a></li>
+              <li class="navigation__list-item"><a href="#" class="navigation__list-link">Team</a></li>
+              <li class="navigation__list-item"><a href="#" class="navigation__list-link">Impact</a></li>
+              <li class="navigation__list-item"><a href="#" class="navigation__list-link">News & Webinars</a></li>
+              <li class="navigation__list-item"><a href="#" class="navigation__list-link">Contact</a></li>
+            </ul>
+          </nav>
+          <a href="https://www.linkedin.com/company/namier-capital-partners" target="_blank" rel="noopener noreferrer"
+            class="footer__social-link">
+            <svg width="24" height="24" fill="none">
+              <path
+                d="M12 0C5.3736 0 0 5.3736 0 12C0 18.6264 5.3736 24 12 24C18.6264 24 24 18.6264 24 12C24 5.3736 18.6264 0 12 0ZM8.51294 18.1406H5.59039V9.34808H8.51294V18.1406ZM7.05176 8.14746H7.03271C6.052 8.14746 5.41772 7.47235 5.41772 6.6286C5.41772 5.76581 6.07141 5.10938 7.07117 5.10938C8.07092 5.10938 8.68616 5.76581 8.7052 6.6286C8.7052 7.47235 8.07092 8.14746 7.05176 8.14746ZM19.051 18.1406H16.1288V13.4368C16.1288 12.2547 15.7057 11.4485 14.6483 11.4485C13.8409 11.4485 13.3601 11.9923 13.1488 12.5173C13.0715 12.7051 13.0527 12.9677 13.0527 13.2305V18.1406H10.1303C10.1303 18.1406 10.1686 10.173 10.1303 9.34808H13.0527V10.593C13.441 9.9939 14.1359 9.14172 15.6865 9.14172C17.6093 9.14172 19.051 10.3984 19.051 13.099V18.1406Z"
+                fill="white" />
+            </svg>
+          </a>
+        </div>
+        <div class="col-4 footer__col footer__text">
+          <p>Namier Capital Partners Limited is an Appointed Representative of Connexion Capital LLP, which
+            is authorised and regulated by the Financial Services Authority in the United Kingdom.</p>
+        </div>
+        <div class="col-8 footer__info">
+          <a href="mailto:info@namiercapital.com" class="icon icon-email">info@namiercapital.com</a>
+          <a href="#">Privacy Policy</a>
+          <p>&copy; 2020 Namier Capitamrvl Partners Limited. All Rights Reserved.</p>
+        </div>
+      </div>
     </div>
   </div>
-    <a href="about.html">About</a>
-  <a href="portfolio.html">Portfolio</a>
-      <a href="team.html">Team</a>
-      <a href="impact.html">Impact</a>
-      <a href="news.html">News&nbsp;&&nbsp;Webinars</a>
-      <a href="contacts.html">Contacts</a>
-      <a href="https://www.linkedin.com/company/namier-capital-partners"><img class="liin" src="img/linkedin.svg" height="24px"></a> 
-</div></div>
-    <div class="row mb-3 padd-3">
-        <div class="col-md-7 themed-grid-col footer-l"><p>Namier Capital Partners Limited is an Appointed<br/> Representative of Connexion Capital LLP, which<br/> is authorised and regulated by the Financial<br/> Services Authority in the United Kingdom. </p></div>
-        <div class="col-md-5 themed-grid-col"><p class="footer-r"><img src="img/footer/mail.svg">info@namiercapital.com&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="Privacy.html">Privacy&nbsp;Policy</a><p><p class="footer-r copy">© 2020 Namier Capital Partners Limited. All Rights Reserved.<p></div>
-    </div>
-    </div>
-</div>
+  <!-- End footer -->
+  <!-- Begin modal -->
+  <div class="modal"></div>
+  <!-- End modal -->
+  <!-- BEGIN scripts -->
+  <script src="js/application.js"></script>
+  <!-- END scripts -->
 </body>
-<script>function myFunction() {
-  var x = document.getElementById("myTopnav");
-  if (x.className === "topnav") {
-    x.className += " responsive";
-  } else {
-    x.className = "topnav";
-  }
-}</script>
+
 </html>

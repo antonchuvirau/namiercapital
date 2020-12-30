@@ -2,6 +2,11 @@
     background: $light-100;
     padding: 135px 0;
     padding-bottom: 160px;
+    &__header {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-bottom: 50px;
+    }
     &__img {
         width: 100%;
         height: 100%;
@@ -25,6 +30,35 @@
             margin-bottom: 30px;
             &:last-child {
                 margin-bottom: 0;
+            }
+            & ul, ol {
+                padding: 0;
+                margin: 0;
+                list-style-type: none;
+                & li {
+                    line-height: 1.45;
+                    color: rgba($black, .7);
+                    margin-bottom: 10px;
+                    padding-left: 15px;
+                    position: relative;
+                    &::before {
+                        content: '';
+                        position: absolute;
+                        width: 5px;
+                        height: 5px;
+                        border-radius: 50%;
+                        background: rgba($black, .7);
+                        left: 0;
+                        top: 10px;
+                    }
+                    &:last-child {
+                        margin-bottom: 0;
+                    }
+                }
+                margin-bottom: 20px;
+                &:last-child {
+                    margin-bottom: 0;
+                }
             }
             & p {
                 margin: 0;
