@@ -1,0 +1,28 @@
+.portfolio-template {
+    &__title {
+        margin-bottom: 65px;
+    }
+    &__filter {
+        margin-bottom: 50px;
+    }
+    &__list {
+        @include flex();
+        flex-wrap: wrap;
+        margin-bottom: 140px;
+        &-item {
+            width: 25%;
+            overflow: hidden;
+            &-img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                transition: transform .25s ease-in-out;
+            }
+            &:hover {
+                & img {
+                    transform: scale(1.05);
+                }
+            }
+        }
+    }
+}

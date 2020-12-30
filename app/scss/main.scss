@@ -71,7 +71,8 @@
   'layout/corporate-services-section',
   'layout/we-section',
   'layout/criteria-section',
-  'layout/matrix-section';
+  'layout/matrix-section',
+  'layout/portfolio-template';
 
 // 5. Components
 @import
@@ -83,7 +84,8 @@
   'components/news-item',
   'components/form',
   'components/title',
-  'components/breadcrumbs';
+  'components/breadcrumbs',
+  'components/filter';
 
 // 6. Page-specific styles
 @import
