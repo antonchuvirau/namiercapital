@@ -1,0 +1,16 @@
+.team-section {
+    padding: 85px 0;
+    padding-top: 305px;
+    background: image('team@2x.png') no-repeat center top / 100% auto;
+    &__header {
+        margin-bottom: 110px;
+    }
+    &__grid {
+        @include flex();
+        flex-wrap: wrap;
+    }
+    &__item {
+        width: 33.333%;
+        margin-bottom: 75px;
+    }
+}

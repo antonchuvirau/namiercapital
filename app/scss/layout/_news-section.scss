@@ -1,0 +1,11 @@
+.news-section {
+    background: $secondary;
+    padding: 150px 0;
+    &__grid {
+        @include flex();
+        flex-wrap: wrap;
+    }
+    &__item {
+        width: 33.333%;
+    }
+}

@@ -1,0 +1,34 @@
+.section {
+    &__header {
+        @include flex(row, flex-end);
+        margin-bottom: 75px;
+        &-link {
+            position: relative;
+            margin-left: auto;
+            text-decoration: none;
+            color: $white;
+            padding-right: 30px;
+            &::after {
+                content: '';
+                position: absolute;
+                width: 25px;
+                height: 25px;
+                right: 0;
+                top: 50%;
+                margin-top: -12.5px;
+                background: icon('arrow-right.svg') no-repeat 50% / 9px auto;
+                transition: transform .25s ease-in-out;
+            }
+            &:hover {
+                &::after {
+                    transform: translate3d(3px, 0, 0);
+                }
+            }
+        }
+        &-title {
+            font-size: 5.2rem;
+            color: $white;
+            line-height: 1;
+        }
+    }
+}

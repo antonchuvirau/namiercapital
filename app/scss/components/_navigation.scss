@@ -1,0 +1,50 @@
+.navigation {
+    &__list {
+        @include flex(row, center);
+        &-item {
+            margin-right: 45px;
+            &:last-child {
+                margin-right: 0;
+            }
+            &_children {
+                position: relative;
+                & > a {
+                    position: relative;
+                    padding-right: 20px;
+                    z-index: 2;
+                    &::after {
+                        content: '';
+                        position: absolute;
+                        width: 15px;
+                        height: 15px;
+                        background: icon('arrow-down.svg') no-repeat center 5px / 10px auto;
+                        top: 50%;
+                        margin-top: -7.5px;
+                        right: 0;
+                        transition: transform .25s ease;
+                    }
+                }
+                &:hover {
+                    & > a {
+                        color: $primary;
+                        &::after {
+                            transform: scale(-1);
+                        }
+                    }
+                    & .sub-menu {
+                        opacity: 1;
+                        transform: none;
+                        pointer-events: auto;
+                    }
+                }
+            }
+        }
+        &-link {
+            text-decoration: none;
+            color: $white;
+            &:hover {
+                color: $primary;
+            }
+        }
+    }
+}

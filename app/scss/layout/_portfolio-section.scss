@@ -1,0 +1,26 @@
+.portfolio-section {
+    &__grid {
+        @include flex(row, stretch);
+    }
+    &__item {
+        display: block;
+        width: 33.333%;
+        height: 300px;
+        overflow: hidden;
+        &-img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform .25s ease-in-out;
+        }
+        &:hover {
+            & .portfolio-section {
+                &__item {
+                    &-img {
+                        transform: scale(1.02);
+                    }
+                }
+            }
+        }
+    }
+}

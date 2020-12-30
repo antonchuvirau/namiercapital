@@ -1,0 +1,29 @@
+.header {
+    padding: 45px 0;
+    background: $secondary;
+    &_sticky {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background: none;
+        z-index: 10;
+    }
+    &__logo {
+        display: inline-block;
+        &-img {
+            max-width: 150px;
+        }
+    }
+    &__grid {
+        @include flex(row, center, flex-end);
+    }
+    &__social-link {
+        margin-left: 125px;
+        width: 24px;
+        height: 24px;
+    }
+    &__mobile-option {
+        @include flex(row, flex-start, flex-end);
+    }
+}

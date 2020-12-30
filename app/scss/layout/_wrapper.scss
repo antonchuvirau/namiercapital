@@ -1,0 +1,12 @@
+.wrapper {
+    position: relative;
+    background: image('home@2x.jpg') no-repeat 50% / cover;
+    padding: 285px 0;
+    padding-bottom: 515px;
+    &__img {
+        position: absolute;
+        width: 100%;
+        bottom: 0;
+        left: 0;
+    }
+}

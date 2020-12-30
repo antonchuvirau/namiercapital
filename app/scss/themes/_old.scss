@@ -1,0 +1,2076 @@
+.txt {
+    color: #000;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 36px;
+    opacity: .6;
+}
+
+.txt-small {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    color: #000000;
+    opacity: 0.7;
+}
+
+// h1 {
+//     color: #fff;
+//     font-family: 'IBM Plex Sans', sans-serif;
+//     font-weight: 600;
+//     font-size: 88px;
+//     line-height: 92px;
+// }
+
+// h2 {
+//     color: #fff;
+//     font-family: 'IBM Plex Sans', sans-serif;
+//     font-weight: 600;
+//     font-size: 52px;
+//     line-height: 60px;
+// }
+
+.h2-black {
+    color: #000;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: 600;
+    font-size: 52px;
+    line-height: 60px;
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+
+// h3 {
+//     font-family: IBM Plex Sans;
+//     font-style: normal;
+//     font-weight: 600;
+//     font-size: 36px;
+//     line-height: 44px;
+//     color: #000000;
+// }
+
+.desc {
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 40px;
+    opacity: .6;
+}
+
+.sm-right {
+    text-decoration: none;
+    margin: 0 0 0 auto;
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+@media (max-width: 768px) {
+    .sm-right {
+        margin-bottom: 10px;
+        margin-top: -20px;
+        display: block;
+        float: left;
+    }
+
+    .sm-right img {
+        margin-bottom: -7px;
+    }
+
+    .team h2 {
+        color: black
+    }
+
+    .team .sm-right {
+        color: black
+    }
+}
+
+@media (max-width: 576px) {
+    h1 {
+        font-size: 64px;
+        line-height: 68px;
+    }
+
+    .desc {
+        font-size: 24px;
+        line-height: 32px;
+    }
+}
+
+i {
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    margin-bottom: 3px;
+}
+
+.dropbtn i:hover {
+    border: solid #09B9B9;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    margin-bottom: 3px;
+}
+
+.right {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+}
+
+.left {
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+}
+
+.up {
+    transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+}
+
+.down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
+
+
+
+/** General **/
+
+body {
+    background-image: url("../img/home_bg_top.jpg");
+    background-size: contain;
+    min-width: 100%;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+}
+
+@media (max-width: 1584px) {
+    body {
+        background-size: auto;
+    }
+}
+
+@media (max-width: 768px) {
+    body {
+        background-size: auto;
+    }
+}
+
+// .container {
+//     width: 100%;
+//     padding-right: var(--bs-gutter-x, .75rem);
+//     padding-left: var(--bs-gutter-x, .75rem);
+//     margin-right: auto;
+//     margin-left: auto;
+// }
+
+// ul {
+//     display: block;
+//     list-style-type: disc;
+//     margin-block-start: 1em;
+//     margin-block-end: 1em;
+//     margin-inline-start: 0px;
+//     margin-inline-end: 0px;
+//     padding-inline-start: 0px;
+// }
+
+// li {
+//     display: list-item;
+//     list-style-type: none;
+//     text-align: -webkit-match-parent;
+// }
+
+.padd-3 {
+    padding-top: 5rem;
+}
+
+.padd-5 {
+    padding-top: 7rem;
+}
+
+.fade {
+    transition: opacity 0.15s linear;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .fade {
+        transition: none;
+    }
+}
+
+.fade:not(.show) {
+    opacity: 0;
+}
+
+.collapse:not(.show) {
+    display: none;
+}
+
+.collapsing {
+    height: 0;
+    overflow: hidden;
+    transition: height 0.35s ease;
+}
+
+.me-auto {
+    margin-right: auto !important;
+}
+
+
+
+/** Menu top **/
+
+
+
+
+.txt-menu {
+    padding-left: 36%;
+}
+
+/* Add a black background color to the top navigation */
+.topnav {
+    overflow: hidden;
+    padding-top: 60px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    text-decoration: none;
+    font-size: 14px;
+    color: #fff;
+    text-decoration: none;
+    transition: color .25s;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+    float: left;
+    display: block;
+    color: #fff;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+/* Add an active class to highlight the current page */
+.active {
+    color: white;
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+    display: none;
+}
+
+/* Dropdown container - needed to position the dropdown content */
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+/* Style the dropdown button to fit inside the topnav */
+.dropdown .dropbtn {
+    font-size: 17px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+/* Style the dropdown content (hidden by default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    z-index: 1;
+}
+
+/* Style the links inside the dropdown */
+.dropdown-content a {
+    float: none;
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+/* Add a dark background on topnav links and the dropdown button on hover */
+.topnav a:hover,
+.dropdown:hover .dropbtn {
+    color: #09B9B9;
+}
+
+/* Add a grey background to dropdown links on hover */
+.dropdown-content a:hover {
+    color: #09B9B9;
+}
+
+/* Show the dropdown menu when the user moves the mouse over the dropdown button */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+@media screen and (max-width: 1400px) {
+
+    .topnav a:not(:first-child),
+    .dropdown .dropbtn {
+        display: none;
+    }
+
+    .txt-menu {
+        padding-left: 0%;
+    }
+
+    .topnav a.icon {
+        float: right;
+        display: flex;
+    }
+}
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+@media screen and (max-width: 1400px) {
+    .topnav.responsive {
+        position: relative;
+    }
+
+    .topnav.responsive a.icon {
+        padding-top: 74px;
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    .topnav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+
+    .topnav.responsive .dropdown {
+        float: none;
+    }
+
+    .topnav.responsive .dropdown-content {
+        position: relative;
+    }
+
+    .topnav.responsive .dropdown .dropbtn {
+        display: block;
+        width: 100%;
+        text-align: left;
+    }
+}
+
+
+
+
+/* Home first screen */
+
+.arrows {
+    height: 377px;
+    width: 350px;
+    background-image: url(../img/arrows.svg);
+    background-repeat: no-repeat;
+    margin-top: 7rem;
+    margin-left: 2rem;
+    align-items: center;
+}
+
+.world-1 {
+    bottom: 230px;
+    left: 113px;
+    background-size: auto;
+    background-color: white;
+    border-radius: 100px;
+    display: block;
+    position: relative;
+    height: 136px;
+    width: 136px;
+    opacity: .2;
+}
+
+.world-2 {
+    bottom: 127px;
+    left: 250px;
+    background-size: auto;
+    background-color: white;
+    border-radius: 100px;
+    display: block;
+    position: relative;
+    height: 136px;
+    width: 136px;
+    opacity: .2;
+}
+
+.world-3 {
+    bottom: 265px;
+    left: -20px;
+    background-size: auto;
+    background-color: white;
+    border-radius: 100px;
+    display: block;
+    position: relative;
+    height: 136px;
+    width: 136px;
+    opacity: .2;
+}
+
+.ww-1 {
+    bottom: 35px;
+    left: 122px;
+    width: 119px;
+    position: relative;
+    font-family: IBM Plex Sans;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.ww-2 {
+    bottom: -155px;
+    left: 285px;
+    width: 119px;
+    position: relative;
+    font-family: IBM Plex Sans;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.ww-3 {
+    bottom: -110px;
+    left: -12px;
+    width: 119px;
+    position: relative;
+    font-family: IBM Plex Sans;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+
+
+/* Portfolio */
+
+.portfolio-itm-1 {
+    height: 300px;
+    min-width: 300px;
+    background-color: #20B1B6;
+    background-image: url(../img/logos/l-1-bg.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.portfolio-itm-1 img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    top: 50%;
+    transform: translate(0, -50%)
+}
+
+.portfolio-itm-2 {
+    height: 300px;
+    min-width: 300px;
+    background-color: #20B1B6;
+}
+
+.portfolio-itm-2 img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    top: 50%;
+    transform: translate(0, -50%)
+}
+
+.portfolio-itm-3 {
+    height: 300px;
+    min-width: 300px;
+    background-color: #125D78;
+}
+
+.portfolio-itm-3 img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    top: 50%;
+    transform: translate(0, -50%)
+}
+
+
+
+/* Team */
+
+.team {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    margin-left: auto;
+}
+
+.team li {
+    padding-inline-start: 0px;
+}
+
+.team ul {
+    padding-inline-start: 0px;
+}
+
+.team-name {
+    color: #000;
+    font-family: IBM Plex Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.team-desc {
+    color: #000;
+    font-family: IBM Plex Sans;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.team-name {
+    margin-left: 28px;
+}
+
+.team-desc {
+    margin-left: 28px;
+}
+
+
+
+/* Announcements */
+
+.announcements-bg {
+    display: block;
+    width: 100%;
+    background-color: #023250;
+}
+
+.announcements {
+    display: block;
+    padding-right: 0px;
+    padding-left: 0px;
+}
+
+.announcements-title {
+    color: #fff;
+    font-family: IBM Plex Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 32px;
+    margin-left: 5%;
+    margin-top: 5%;
+}
+
+.announcements-date {
+    color: #fff;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    margin-left: 5%;
+    margin-top: 5%;
+}
+
+.ann-slash {
+    opacity: .2;
+}
+
+.announcements-itm-1 {
+    height: 600px;
+    min-width: 400px;
+}
+
+.announcements-itm-1 img {
+    width: 100%;
+}
+
+.announcements-itm-2 {
+    height: 600px;
+    min-width: 400px;
+}
+
+.announcements-itm-2 img {
+    width: 100%;
+}
+
+.announcements-itm-3 {
+    height: 600px;
+    min-width: 400px;
+}
+
+.announcements-itm-3 img {
+    width: 100%;
+}
+
+
+
+
+/* Contacts */
+
+.contacts {
+    padding-top: 12%;
+    color: white;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.contacts-bg {
+    display: block;
+    width: 100%;
+    background-image: url(../img/contacts-bg.png);
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    height: 1030px;
+}
+
+.contacts-left {
+    height: 700px;
+    background-image: url(../img/contacts/bg.png);
+}
+
+.contacts-right {
+    height: 700px;
+    background-color: white;
+
+}
+
+.contact-content {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    margin-top: 90px;
+    margin-left: 70px;
+}
+
+.contact-blockname {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    opacity: 0.8;
+}
+
+.contact-title {
+    font-family: IBM Plex Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 64px;
+    line-height: 72px;
+    color: #FFFFFF;
+}
+
+.contact-text {
+    display: flex;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFFFFF;
+}
+
+.contact-form {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    margin-top: 90px;
+    margin-left: 100px;
+    font-family: IBM Plex Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 28px;
+    color: #000000;
+}
+
+// form {
+//     max-width: 450px;
+// }
+
+// form .upload {
+//     background: #E7FEFE;
+//     color: #09B9B9;
+//     border: 1px;
+//     border-style: dotted;
+//     border-color: #09B9B9;
+// }
+
+
+// form textarea {
+//     font-family: Open Sans;
+//     font-style: normal;
+//     font-weight: normal;
+//     font-size: 16px;
+//     height: 80px;
+//     color: #000000;
+//     opacity: 0.5;
+//     background: #EBF2F9;
+//     width: 100%;
+//     border: 0;
+//     margin: 0 0 15px;
+//     padding: 15px;
+//     box-sizing: border-box;
+// }
+
+// form input {
+//     font-family: Open Sans;
+//     font-style: normal;
+//     font-weight: normal;
+//     font-size: 16px;
+//     height: 50px;
+//     color: #000000;
+//     opacity: 0.5;
+//     background: #EBF2F9;
+//     width: 100%;
+//     border: 0;
+//     margin: 0 0 15px;
+//     padding: 15px;
+//     box-sizing: border-box;
+// }
+
+// form button {
+//     font-family: Open Sans;
+//     font-style: normal;
+//     font-weight: 600;
+//     font-size: 16px;
+//     height: 52px;
+//     outline: 0;
+//     background: #09B9B9;
+//     width: 100%;
+//     border: 0;
+//     padding: 15px;
+//     color: #FFFFFF;
+//     -webkit-transition: all 0.3 ease;
+//     transition: all 0.3 ease;
+//     cursor: pointer;
+// }
+
+// .form button:hover,
+// .form button:active,
+// .form button:focus {
+//     background: #023250;
+// }
+
+// .form input:active,
+// .form input:focus {
+//     background: #F6FBFF;
+//     border: 0;
+// }
+
+@media (max-width: 1400px) {
+    form {
+        max-width: 400px;
+    }
+
+    .contact-form {
+        margin-top: 60px;
+        margin-left: 80px;
+    }
+
+    .contact-content {
+        margin-top: 60px;
+        margin-left: 80px;
+    }
+}
+
+@media (max-width: 1200px) {
+    form {
+        max-width: 300px;
+    }
+}
+
+@media (max-width: 990px) {
+    form {
+        max-width: 250px;
+    }
+
+    .contact-form {
+        margin-top: 40px;
+        margin-left: 50px;
+    }
+
+    .contact-content {
+        margin-top: 40px;
+        margin-left: 50px;
+    }
+}
+
+@media (max-width: 768px) {
+    .contacts-bg {
+        min-height: 1600px;
+    }
+
+    form {
+        max-width: 450px;
+    }
+
+    .contact-form {
+        margin-top: 80px;
+        margin-left: 45px;
+    }
+
+    .contact-content {
+        margin-top: 80px;
+        margin-left: 45px;
+    }
+}
+
+
+
+/* Footer */
+
+// .footer {
+//     background-color: #023250;
+//     width: 100%;
+//     min-height: 424px;
+// }
+
+.footer-b {
+    position: relative;
+    display: inline-flex;
+    padding-top: 120px;
+}
+
+.footer-l {
+    width: 50%;
+    position: relative;
+    display: inline-flex;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFFFFF;
+    opacity: 0.5;
+}
+
+.footer-r {
+    position: relative;
+    display: inline-flex;
+    float: right;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFFFFF;
+}
+
+.footer-r a {
+    position: relative;
+    display: inline-flex;
+    float: right;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFFFFF;
+}
+
+.copy {
+    opacity: .3;
+}
+
+@media (max-width: 768px) {
+    .footer-r {
+        float: left;
+    }
+}
+
+.botnav {
+    overflow: hidden;
+    padding-top: 60px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    text-decoration: none;
+    font-size: 14px;
+    color: #fff;
+    text-decoration: none;
+    transition: color .25s;
+}
+
+/* Style the links inside the navigation bar */
+.botnav a {
+    float: left;
+    display: block;
+    color: #fff;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.botnav .txt-menu {
+    padding-left: 36%;
+}
+
+.botnav .dropdown-content a {
+    background-color: #023250;
+    float: none;
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+/* Add an active class to highlight the current page */
+.active {
+    color: white;
+}
+
+.botnav a:hover,
+.dropdown:hover .dropbtn {
+    color: #09B9B9;
+}
+
+/* Add a grey background to dropdown links on hover */
+.botnav .dropdown-content a:hover {
+    color: #09B9B9;
+}
+
+@media screen and (max-width: 1400px) {
+
+    .botnav a:not(:first-child),
+    .botnav .dropdown .dropbtn {
+        display: block;
+    }
+
+}
+
+/* Block-1 */
+
+.our-team {
+    min-width: 100%;
+    background-image: url(../img/team/bg-top.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 600px;
+}
+
+.our-team .txt-small {
+    padding-top: 60px;
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 36px;
+}
+
+.txt-op {
+    opacity: .6;
+}
+
+.txt-white {
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    opacity: .6;
+    max-width: 60%;
+}
+
+@media screen and (max-width: 991px) {
+    .txt-white {
+        font-size: 18px;
+        line-height: 28px;
+    }
+
+    h1 {
+        font-size: 56px;
+        line-height: 66px;
+    }
+}
+
+/* Block-2 */
+
+.team-1 {
+    min-height: 800px;
+    background-image: url(../img/team/bg-mid.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+.row {
+    --bs-gutter-x: 0rem;
+}
+
+body {
+    background-image: none;
+}
+
+/* Block-1 */
+
+.investors-bg {
+    min-width: 85%;
+    background-image: url(../img/investors/bg-top.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 900px;
+}
+
+.investors-bg .txt-small {
+    padding-top: 60px;
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 36px;
+}
+
+.txt-op {
+    opacity: .6;
+}
+
+.txt-white {
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 36px;
+    opacity: .6;
+    max-width: 60%;
+}
+
+@media screen and (max-width: 991px) {
+    .txt-white {
+        font-size: 18px;
+        line-height: 28px;
+    }
+
+    h1 {
+        font-size: 56px;
+        line-height: 66px;
+    }
+}
+
+/* Block-2 */
+
+.who {
+    min-width: 85%;
+    background-image: url(../img/investors/bg-b2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 800px;
+    padding-bottom: 120px;
+}
+
+.investors-content-1 {
+    padding: 2rem;
+    height: 260px;
+    background-image: url(../img/investors/who-img-1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.investors-content-1 p {
+    max-width: 60%;
+}
+
+.investors-content-2 {
+    padding: 2rem;
+    height: 260px;
+    background-image: url(../img/investors/who-img-2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.investors-content-2 p {
+    max-width: 60%;
+}
+
+.investors-content-3 {
+    padding: 2rem;
+    height: 260px;
+    background-image: url(../img/investors/who-img-3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.investors-content-3 p {
+    max-width: 60%;
+}
+
+.investors-content-4 {
+    padding: 2rem;
+    height: 260px;
+    background-image: url(../img/investors/who-img-4.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.investors-content-4 p {
+    max-width: 80%;
+}
+
+/* Block-3 */
+
+.criteria {
+    min-height: 600px;
+    padding-bottom: 120px;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    color: #035385;
+}
+
+.criteria-r1 {
+    float: inherit;
+    max-width: 60%;
+    padding-right: 40px;
+}
+
+.criteria-1 {
+    padding-top: 60px;
+}
+
+.criteria-1 img {
+    padding-right: 20px;
+}
+
+.criteria-r1 {
+    padding-bottom: 40px;
+}
+
+/* Block-4 */
+
+.industry {
+    min-height: 800px;
+    background: #023250;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    color: #FFFFFF;
+    padding-bottom: 100px;
+}
+
+.industry-1 {
+    height: 200px;
+    padding: 60px;
+    background: #07929C;
+    background-image: url(../img/investors/industry-1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.industry-1 img {
+    padding-right: 20px;
+}
+
+.industry-2 {
+    height: 200px;
+    padding: 60px;
+    background: #07929C;
+    background-image: url(../img/investors/industry-2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.industry-2 img {
+    padding-right: 20px;
+}
+
+.industry-3 {
+    height: 200px;
+    padding: 60px;
+    background: #07929C;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.industry-3 img {
+    padding-right: 20px;
+}
+
+.industry-4 {
+    height: 200px;
+    padding: 60px;
+    background: #09B9B9;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.industry-4 img {
+    padding-right: 20px;
+}
+
+.industry-5 {
+    height: 200px;
+    padding: 60px;
+    background: #08A0A6;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.industry-5 img {
+    padding-right: 20px;
+}
+
+.industry-6 {
+    height: 200px;
+    padding: 60px;
+    background: #078997;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.industry-6 img {
+    padding-right: 20px;
+}
+
+.industry-7 {
+    height: 200px;
+    padding: 60px;
+    background: #07929C;
+    background-image: url(../img/investors/industry-7.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.industry-7 img {
+    padding-right: 20px;
+}
+
+.industry-8 {
+    height: 200px;
+    padding: 60px;
+    background: #07929C;
+    background-image: url(../img/investors/industry-8.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.industry-8 img {
+    padding-right: 20px;
+}
+
+/* Block-5 */
+
+.investor {
+    min-width: 100%;
+    background-color: #ECF2F9;
+    padding-bottom: 120px;
+}
+
+.investor-content {
+    padding: 5rem;
+    min-width: 450px;
+    min-height: 450px;
+    background-color: white;
+}
+
+.investor a {
+    text-decoration: none;
+    color: #09B9B9;
+}
+
+.investor .h2-black {}
+
+.investor h3 {
+    margin-top: -1rem;
+}
+
+.investor-img-1 {
+    min-width: 400px;
+    min-height: 400px;
+    background-image: url(../img/growth-companies/img-1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.investor-img-2 {
+    min-width: 400px;
+    min-height: 400px;
+    background-image: url(../img/growth-companies/img-2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+.row {
+    --bs-gutter-x: 0rem;
+}
+
+body {
+    background-image: none;
+}
+
+/* Block-1 */
+
+.growth-companies-bg {
+    min-width: 85%;
+    background-image: url(../img/growth-companies/bg-top.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 900px;
+}
+
+.growth-companies-bg .txt-small {
+    padding-top: 60px;
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 36px;
+}
+
+.txt-op {
+    opacity: .6;
+}
+
+.txt-white {
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 36px;
+    opacity: .6;
+    max-width: 60%;
+}
+
+@media screen and (max-width: 991px) {
+    .txt-white {
+        font-size: 18px;
+        line-height: 28px;
+    }
+
+    h1 {
+        font-size: 56px;
+        line-height: 66px;
+    }
+}
+
+/* Block-2 */
+
+.selection {
+    display: block;
+    font-family: IBM Plex Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 32px;
+    color: #035385;
+    min-width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 700px;
+    background-color: white;
+}
+
+.selection-l {
+    text-align: right;
+    color: #035385;
+}
+
+.selection-l p {
+    padding-top: 37px;
+}
+
+.selection-c {
+    text-align: center;
+}
+
+.selection-r {
+    text-align: left;
+}
+
+.selection-r p {
+    padding-bottom: 37px;
+    margin-block-start: 0rem;
+}
+
+.tree {
+    max-height: 500px;
+    padding-bottom: 70px;
+}
+
+@media screen and (max-width: 1200px) {
+    .selection {
+        font-size: 18px;
+        line-height: 24px;
+    }
+
+    .tree {
+        max-height: 400px;
+        padding-bottom: 40px;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .tree {
+        max-height: 360px;
+        padding-bottom: 20px;
+    }
+
+    .selection-l p {
+        padding-top: 24px;
+    }
+
+    .selection-r p {
+        padding-bottom: 17px;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .selection {
+        font-size: 14px;
+        line-height: 18px;
+        min-height: 560px;
+    }
+
+    .tree {
+        max-height: 260px;
+        padding-bottom: 0px;
+    }
+
+    .selection-l p {
+        padding-top: 14px;
+    }
+
+    .selection-r p {
+        padding-bottom: 10px;
+    }
+}
+
+/* Block-3 */
+
+.process {
+    display: block;
+    min-height: 700px;
+    min-width: 100%;
+    background-image: url(../img/growth-companies/process-bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #023250;
+}
+
+.process h2 {
+    padding-top: 90px;
+}
+
+.process-num {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 27px;
+    color: #FFFFFF;
+    text-align: center;
+    width: 27px;
+    padding: 3px;
+    border: 2px solid #09B9B9;
+    border-radius: 50px;
+}
+
+.arrow {
+    display: flex;
+}
+
+.process-title {
+    font-family: IBM Plex Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 32px;
+    color: #FFFFFF;
+}
+
+.process-txt {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 38px;
+    color: #FFFFFF;
+    opacity: 0.6;
+    padding-bottom: 50px;
+}
+
+@media screen and (max-width: 1200px) {
+    .arrow img {
+        width: 160px;
+    }
+
+}
+
+/* Block-4 */
+
+.investor {
+    min-width: 100%;
+    background-color: #ECF2F9;
+    padding-bottom: 120px;
+}
+
+.investor-content {
+    padding: 5rem;
+    min-width: 450px;
+    min-height: 450px;
+    background-color: white;
+}
+
+.investor a {
+    text-decoration: none;
+    color: #09B9B9;
+}
+
+.investor .h2-black {}
+
+.investor h3 {
+    margin-top: -1rem;
+}
+
+.investor-img-1 {
+    min-width: 400px;
+    min-height: 400px;
+    background-image: url(../img/growth-companies/img-1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.investor-img-2 {
+    min-width: 400px;
+    min-height: 400px;
+    background-image: url(../img/growth-companies/img-2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.investor-img-3 {
+    min-width: 400px;
+    min-height: 400px;
+    background-image: url(../img/growth-companies/img-3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 991px) {
+
+    .investor h3 {
+        margin-top: 0rem;
+    }
+}
+
+@media screen and (max-width: 576px) {
+
+    .investor .h2-black {
+        padding: 30px;
+    }
+}
+
+.row {
+    --bs-gutter-x: 0rem;
+}
+
+body {
+    background-image: none;
+}
+
+/* Block-1 */
+
+.corporate-clients {
+    padding: 30px;
+    display: block;
+    min-width: 90;
+    background-image: url(../img/corporate-clients/corporate-clients-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 800px;
+}
+
+h1 {
+    color: black;
+}
+
+.txt-small {
+    padding-top: 60px;
+    color: #000;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 36px;
+}
+
+.txt-op {
+    opacity: .6;
+}
+
+.txt {
+    color: #000;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    opacity: .6;
+    max-width: 40%;
+}
+
+/* Block-2 */
+
+.clients-icons {
+    padding: 30px;
+    display: block;
+    background-color: white;
+    min-height: 800px;
+}
+
+.icons {
+    padding-bottom: 40px;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    color: #000000;
+    opacity: 0.7;
+    text-align: center;
+}
+
+
+i-b {
+    border: solid black;
+    border-width: 0 2px 2px 0;
+    display: inline-block;
+    padding: 3px;
+    margin-bottom: 3px;
+}
+
+/** Menu top **/
+
+.txt-menu {
+    padding-left: 40%;
+}
+
+/* Add a black background color to the top navigation */
+.topnav {
+    overflow: hidden;
+    padding-top: 60px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    text-decoration: none;
+    font-size: 14px;
+    color: #fff;
+    text-decoration: none;
+    transition: color .25s;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+    float: left;
+    display: block;
+    color: #000;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+/* Add an active class to highlight the current page */
+.active {
+    color: black;
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+    display: none;
+}
+
+/* Dropdown container - needed to position the dropdown content */
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+/* Style the dropdown button to fit inside the topnav */
+.dropdown .dropbtn {
+    font-size: 17px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+.dropdown .dropbtn-black {
+    font-size: 17px;
+    border: none;
+    outline: none;
+    color: black;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+/* Style the dropdown content (hidden by default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    z-index: 1;
+}
+
+/* Style the links inside the dropdown */
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+/* Add a dark background on topnav links and the dropdown button on hover */
+.topnav a:hover,
+.dropdown:hover .dropbtn-black {
+    color: #09B9B9;
+}
+
+/* Add a grey background to dropdown links on hover */
+.dropdown-content a:hover {
+    color: #09B9B9;
+}
+
+/* Show the dropdown menu when the user moves the mouse over the dropdown button */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+@media screen and (max-width: 1400px) {
+
+    .topnav a:not(:first-child),
+    .dropdown .dropbtn-black {
+        display: none;
+    }
+
+    .txt-menu {
+        padding-left: 0%;
+    }
+
+    .topnav a.icon {
+        float: right;
+        display: flex;
+    }
+}
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+@media screen and (max-width: 1400px) {
+    .topnav.responsive {
+        position: relative;
+    }
+
+    .topnav.responsive a.icon {
+        padding-top: 74px;
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    .topnav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+
+    .topnav.responsive .dropdown {
+        float: none;
+    }
+
+    .topnav.responsive .dropdown-content {
+        position: relative;
+    }
+
+    .topnav.responsive .dropdown .dropbtn-black {
+        display: block;
+        width: 100%;
+        text-align: left;
+    }
+}
+
+/** Text **/
+
+.about-txt {
+    color: #000;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 36px;
+    opacity: .6;
+    max-width: 60%;
+    padding-bottom: 10rem;
+}
+
+.about-bg {
+    display: block;
+    min-width: 100%;
+    background-image: url(../img/about/bg-top.png);
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    height: auto;
+}
+
+.contacts-bg {
+    background-image: url(../img/about/contacts-bg.png)
+}
+
+
+// .title {
+//     padding-top: 100px;
+//     font-family: IBM Plex Sans;
+//     font-style: normal;
+//     font-weight: 600;
+//     font-size: 64px;
+//     line-height: 72px;
+//     color: #000000;
+// }
+
+
+i-b {
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    margin-bottom: 3px;
+}
+
+.dropbtn i-b:hover {
+    border: solid #09B9B9;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    margin-bottom: 3px;
+}
+
+
+/** Menu top **/
+
+.txt-menu {
+    padding-left: 36%;
+}
+
+/* Add a black background color to the top navigation */
+.topnav {
+    overflow: hidden;
+    padding-top: 60px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    text-decoration: none;
+    font-size: 14px;
+    color: #fff;
+    text-decoration: none;
+    transition: color .25s;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+    float: left;
+    display: block;
+    color: #000;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+/* Add an active class to highlight the current page */
+.active {
+    color: black;
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+    display: none;
+}
+
+/* Dropdown container - needed to position the dropdown content */
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+/* Style the dropdown button to fit inside the topnav */
+.dropdown .dropbtn {
+    font-size: 17px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+.dropdown .dropbtn-black {
+    font-size: 17px;
+    border: none;
+    outline: none;
+    color: black;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+/* Style the dropdown content (hidden by default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    z-index: 1;
+}
+
+/* Style the links inside the dropdown */
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+/* Add a dark background on topnav links and the dropdown button on hover */
+.topnav a:hover,
+.dropdown:hover .dropbtn-black {
+    color: #09B9B9;
+}
+
+/* Add a grey background to dropdown links on hover */
+.dropdown-content a:hover {
+    color: #09B9B9;
+}
+
+/* Show the dropdown menu when the user moves the mouse over the dropdown button */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+@media screen and (max-width: 1400px) {
+
+    .topnav a:not(:first-child),
+    .dropdown .dropbtn-black {
+        display: none;
+    }
+
+    .txt-menu {
+        padding-left: 0%;
+    }
+
+    .topnav a.icon {
+        float: right;
+        display: flex;
+    }
+}
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+@media screen and (max-width: 1400px) {
+    .topnav.responsive {
+        position: relative;
+    }
+
+    .topnav.responsive a.icon {
+        padding-top: 74px;
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    .topnav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+
+    .topnav.responsive .dropdown {
+        float: none;
+    }
+
+    .topnav.responsive .dropdown-content {
+        position: relative;
+    }
+
+    .topnav.responsive .dropdown .dropbtn-black {
+        display: block;
+        width: 100%;
+        text-align: left;
+    }
+}

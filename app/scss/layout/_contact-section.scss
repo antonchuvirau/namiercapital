@@ -1,0 +1,45 @@
+.contact-section {
+    background: image('contact@2x.jpg') no-repeat 50% / cover;
+    padding: 160px 0;
+    &__form {
+        width: 100%;
+        height: 100%;
+        background: $white;
+        padding: 85px 100px;
+    }
+    &__info {
+        @include flex(column);
+        width: 100%;
+        height: 100%;
+        padding: 85px 75px;
+        background: image('mask@2x.png') no-repeat 50% / cover;
+        &-note {
+            text-transform: uppercase;
+            letter-spacing: .16em;
+            color: rgba($white, .8);
+        }
+        &-title {
+            margin-top: auto;
+            font-family: $secondary-font, sans-serif;
+            color: $white;
+            font-weight: 600;
+            font-size: 6.4rem;
+            line-height: 1.125;
+            margin-bottom: 50px;
+        }
+        &-text {
+            margin: 0;
+            text-decoration: none;
+            margin-bottom: 30px;
+            color: $white;
+            &:last-child {
+                margin-bottom: 0;
+            }
+            &[href] {
+                &:hover {
+                    opacity: .8;
+                }
+            }
+        }
+    }
+}

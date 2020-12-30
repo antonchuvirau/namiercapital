@@ -1,0 +1,22 @@
+.hero {
+    &__title {
+        font-size: 8.6rem;
+        line-height: 1.1;
+        color: $white;
+    }
+    &__desc {
+        margin: 0;
+        font-size: 3.2rem;
+        margin-top: 50px;
+        color: rgba($white, .6);
+        line-height: 1.25;
+    }
+    &__icon {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 370px;
+        height: 340px;
+        margin: 0 auto;
+    }
+}

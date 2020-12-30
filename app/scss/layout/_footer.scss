@@ -1,0 +1,42 @@
+.footer {
+    background: $secondary;
+    padding: 110px 0;
+    &__options {
+        @include flex(row, center, flex-end);
+    }
+    &__social-link {
+        margin-left: 135px;
+        width: 24px;
+        height: 24px;
+    }
+    &__text {
+        margin-top: 65px;
+        & p {
+            margin: 0;
+            line-height: 1.5;
+            color: rgba($white, .5);
+        }
+    }
+    &__info {
+        @include flex(row, flex-start, flex-end);
+        flex-wrap: wrap;
+        text-align: right;
+        margin-top: 65px;
+        & p {
+            width: 100%;
+            margin: 0;
+            color: rgba($white, .2);
+            margin-top: 45px;
+        }
+        & a {
+            text-decoration: none;
+            color: $white;
+            &[href*="mailto"] {
+                margin-right: 45px;
+            }
+            &:hover {
+                opacity: .8;
+            }
+        }
+    }
+}

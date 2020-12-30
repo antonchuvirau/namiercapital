@@ -1,0 +1,26 @@
+.team-item {
+    @include flex(row, center);
+    &__img {
+        max-width: 120px;
+        max-height: 120px;
+        border-radius: 50%;
+        margin-right: 25px;
+        flex-shrink: 0;
+    }
+    &__name {
+        margin: 0;
+        font-family: $secondary-font, sans-serif;
+        font-size: 2rem;
+        font-weight: 600;
+        line-height: 1.25;
+    }
+    &__position {
+        display: block;
+        font-family: $font, sans-serif;
+        font-size: 1.6rem;
+        font-weight: normal;
+        color: rgba($black, .8);
+        margin-top: 5px;
+        max-width: 165px;
+    }
+}
