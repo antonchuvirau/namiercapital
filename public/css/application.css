@@ -4050,13 +4050,13 @@ h1, h2, h3, h4, h5, h6 {
 
 .template__text {
   max-width: 800px; }
-  .template__text h3, .template__text h4, .template__text h5, .template__text h6 {
+  .template__text h2, .template__text h3, .template__text h4, .template__text h5, .template__text h6 {
     margin: 0;
     font-family: "IBM Plex Sans", sans-serif;
     font-weight: 600;
     margin-bottom: 50px;
     line-height: 1.15; }
-  .template__text h3 {
+  .template__text h2, .template__text h3 {
     font-size: 5.2rem; }
   .template__text h4 {
     font-size: 4.8rem; }
@@ -4064,10 +4064,10 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 4.5rem; }
   .template__text p {
     margin: 0;
-    font-size: 2.4rem;
-    line-height: 1.5;
+    font-size: 2rem;
+    line-height: 1.65;
     color: rgba(34, 34, 34, 0.6);
-    margin-bottom: 40px; }
+    margin-bottom: 30px; }
     .template__text p:last-child {
       margin-bottom: 0; }
 
@@ -4758,6 +4758,18 @@ h1, h2, h3, h4, h5, h6 {
     line-height: 1.22;
     margin-bottom: 20px;
     color: #222; }
+
+.page-template__title {
+  margin-bottom: 35px; }
+
+.page-template__desc {
+  margin-bottom: 65px; }
+  .page-template__desc p {
+    margin: 0;
+    color: rgba(34, 34, 34, 0.6); }
+  .page-template__desc a {
+    color: rgba(9, 185, 185, 0.6);
+    text-decoration: none; }
 
 .button {
   display: inline-block;
