@@ -32,6 +32,9 @@
             line-height: 1.45;
             margin-top: 35px;
             color: rgba($black, .7);
+            &_light {
+                color: rgba($white, .6);
+            }
         }
         &-title {
             font-size: 5.2rem;

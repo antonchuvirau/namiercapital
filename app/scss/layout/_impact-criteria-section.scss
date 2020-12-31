@@ -1,0 +1,8 @@
+.impact-criteria-section {
+    padding-bottom: 190px;
+    background: image('criteria@2x.jpg') no-repeat 50% / cover;
+    &__header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}

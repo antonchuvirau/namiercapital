@@ -1,0 +1,12 @@
+.impact-template {
+    &__group {
+        background: $light-150 image('impact@2x.jpg') no-repeat center bottom / 100% auto;
+    }
+    &__investor {
+        padding: 0;
+    }
+    &__we {
+        padding: 0;
+        margin-top: 135px;
+    }
+}

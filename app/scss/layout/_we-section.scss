@@ -1,20 +1,72 @@
 .we-section {
     background: image('we@2x.jpg') no-repeat center bottom / cover;
+    &_no-bg {
+        background: none
+    }
     &__item {
         height: 260px;
         width: 100%;
         padding: 45px 50px;
-        &-text {
+        background-size: cover;
+        background-position: 50%;
+        background-repeat: no-repeat;
+        &-title {
             margin: 0;
-            line-height: 1.5;
-            color: rgba($black, .7);
+            font-size: 2rem;
+            font-weight: 600;
+            font-family: $secondary-font, sans-serif;
+            margin-bottom: 15px;
+            &_light {
+                color: $white;
+            }
+        }
+        &-text {
+            & ul {
+                list-style-type: none;
+                padding: 0;
+                margin: 0;
+                & li {
+                    line-height: 1.5;
+                    color: rgba($black, .7);
+                    margin-bottom: 5px;
+                    position: relative;
+                    padding-left: 15px;
+                    &::before {
+                        content: '';
+                        position: absolute;
+                        width: 5px;
+                        height: 5px;
+                        border-radius: 50%;
+                        background: rgba($black, .7);
+                        left: 0;
+                        top: 10px;
+                    }
+                    &:last-child {
+                        margin: 0;
+                    }
+                }
+            }
+            & p {
+                margin: 0;
+                line-height: 1.5;
+                color: rgba($black, .7);
+            }
+            &_light {
+                & p {
+                    color: rgba($white, .7);
+                }
+                & ul, ol {
+                    & li {
+                        color: rgba($white, .7);
+                    }
+                }
+            }
         }
     }
     &__col {
         &:nth-child(1) {
             & .we-section {
                 &__item {
-                    background: image('we-1@2x.jpg') no-repeat 50% / cover;
                     &-text {
                         max-width: 205px;
                     }
@@ -24,9 +76,8 @@
         &:nth-child(2) {
             & .we-section {
                 &__item {
-                    background: image('we-2@2x.jpg') no-repeat 50% / cover;
                     &-text {
-                        max-width: 340px;
+                        max-width: 500px;
                     }
                 }
             }
@@ -34,17 +85,9 @@
         &:nth-child(3) {
             & .we-section {
                 &__item {
-                    background: image('we-3@2x.jpg') no-repeat 50% / cover;
                     &-text {
                         max-width: 425px;
                     }
-                }
-            }
-        }
-        &:nth-child(4) {
-            & .we-section {
-                &__item {
-                    background: image('we-4@2x.jpg') no-repeat 50% / cover;
                 }
             }
         }

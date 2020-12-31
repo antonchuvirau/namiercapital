@@ -3863,6 +3863,8 @@ h1, h2, h3, h4, h5, h6 {
       line-height: 1.45;
       margin-top: 35px;
       color: rgba(34, 34, 34, 0.7); }
+      .section__header-desc_light {
+        color: rgba(255, 255, 255, 0.6); }
     .section__header-title {
       font-size: 5.2rem;
       color: #fff;
@@ -4101,7 +4103,8 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: 600;
     color: #fff;
     font-size: 8.8rem;
-    line-height: 1.1; }
+    line-height: 1.1;
+    max-width: 900px; }
     .template-wrapper__title_dark {
       color: #222; }
   .template-wrapper__text {
@@ -4235,6 +4238,8 @@ h1, h2, h3, h4, h5, h6 {
   background: #F6FBFF;
   padding: 135px 0;
   padding-bottom: 160px; }
+  .investor-section_no-bg {
+    background: none; }
   .investor-section__header {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -4421,28 +4426,58 @@ h1, h2, h3, h4, h5, h6 {
 
 .we-section {
   background: url("../img/we@2x.jpg") no-repeat center bottom/cover; }
+  .we-section_no-bg {
+    background: none; }
   .we-section__item {
     height: 260px;
     width: 100%;
-    padding: 45px 50px; }
-    .we-section__item-text {
+    padding: 45px 50px;
+    background-size: cover;
+    background-position: 50%;
+    background-repeat: no-repeat; }
+    .we-section__item-title {
+      margin: 0;
+      font-size: 2rem;
+      font-weight: 600;
+      font-family: "IBM Plex Sans", sans-serif;
+      margin-bottom: 15px; }
+      .we-section__item-title_light {
+        color: #fff; }
+    .we-section__item-text ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 0; }
+      .we-section__item-text ul li {
+        line-height: 1.5;
+        color: rgba(34, 34, 34, 0.7);
+        margin-bottom: 5px;
+        position: relative;
+        padding-left: 15px; }
+        .we-section__item-text ul li::before {
+          content: '';
+          position: absolute;
+          width: 5px;
+          height: 5px;
+          border-radius: 50%;
+          background: rgba(34, 34, 34, 0.7);
+          left: 0;
+          top: 10px; }
+        .we-section__item-text ul li:last-child {
+          margin: 0; }
+    .we-section__item-text p {
       margin: 0;
       line-height: 1.5;
       color: rgba(34, 34, 34, 0.7); }
-  .we-section__col:nth-child(1) .we-section__item {
-    background: url("../img/we-1@2x.jpg") no-repeat 50%/cover; }
-    .we-section__col:nth-child(1) .we-section__item-text {
-      max-width: 205px; }
-  .we-section__col:nth-child(2) .we-section__item {
-    background: url("../img/we-2@2x.jpg") no-repeat 50%/cover; }
-    .we-section__col:nth-child(2) .we-section__item-text {
-      max-width: 340px; }
-  .we-section__col:nth-child(3) .we-section__item {
-    background: url("../img/we-3@2x.jpg") no-repeat 50%/cover; }
-    .we-section__col:nth-child(3) .we-section__item-text {
-      max-width: 425px; }
-  .we-section__col:nth-child(4) .we-section__item {
-    background: url("../img/we-4@2x.jpg") no-repeat 50%/cover; }
+    .we-section__item-text_light p {
+      color: rgba(255, 255, 255, 0.7); }
+    .we-section__item-text_light ul li, .we-section__item-text_light ol li {
+      color: rgba(255, 255, 255, 0.7); }
+  .we-section__col:nth-child(1) .we-section__item-text {
+    max-width: 205px; }
+  .we-section__col:nth-child(2) .we-section__item-text {
+    max-width: 500px; }
+  .we-section__col:nth-child(3) .we-section__item-text {
+    max-width: 425px; }
 
 .criteria-section__wrapper {
   padding: 60px 0;
@@ -4632,6 +4667,31 @@ h1, h2, h3, h4, h5, h6 {
       top: 10px; }
     .team-member-section__text ul li:last-child, .team-member-section__text ol li:last-child {
       margin-bottom: 0; }
+
+.impact-criteria-section {
+  padding-bottom: 190px;
+  background: url("../img/criteria@2x.jpg") no-repeat 50%/cover; }
+  .impact-criteria-section__header {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start; }
+
+.group {
+  padding: 160px 0; }
+
+.impact-template__group {
+  background: #EBF2F9 url("../img/impact@2x.jpg") no-repeat center bottom/100% auto; }
+
+.impact-template__investor {
+  padding: 0; }
+
+.impact-template__we {
+  padding: 0;
+  margin-top: 135px; }
 
 .button {
   display: inline-block;
