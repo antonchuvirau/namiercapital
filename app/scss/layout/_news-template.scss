@@ -1,0 +1,13 @@
+.news-template {
+    &__title {
+        margin-bottom: 65px;
+    }
+    &__filter {
+        margin-bottom: 50px;
+    }
+    &__list {
+        &-col {
+            margin-top: 65px;
+        }
+    }
+}
