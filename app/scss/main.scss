@@ -75,7 +75,8 @@
   'layout/portfolio-template',
   'layout/overview-section',
   'layout/role-section',
-  'layout/team-page';
+  'layout/team-page',
+  'layout/team-member-section';
 
 // 5. Components
 @import
@@ -90,7 +91,8 @@
   'components/breadcrumbs',
   'components/filter',
   'components/portfolio-item',
-  'components/tags';
+  'components/tags',
+  'components/team-member-info';
 
 // 6. Page-specific styles
 @import

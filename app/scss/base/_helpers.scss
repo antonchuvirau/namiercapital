@@ -29,4 +29,11 @@
             background: icon('address.svg') no-repeat 50% / 20px auto;
         }
     }
+    &-linkedin {
+        &::after {
+            background: icon('linkedin.svg') no-repeat 50% / 20px auto;
+            top: 50%;
+            margin-top: -12px;
+        }
+    }
 }

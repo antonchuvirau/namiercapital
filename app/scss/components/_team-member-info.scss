@@ -1,0 +1,33 @@
+.team-member-info {
+    @include flex(row, center);
+    &__img {
+        max-width: 300px;
+        max-height: 300px;
+        border-radius: 50%;
+    }
+    &__content {
+        @include flex(column, flex-start);
+        padding-left: 100px;
+    }
+    &__title {
+        margin: 0;
+        font-family: $secondary-font, sans-serif;
+        font-weight: 600;
+        color: $white;
+        font-size: 6.4rem;
+        line-height: 1.125;
+    }
+    &__position {
+        font-size: 3.2rem;
+        color: rgba($white, .8);
+        margin-top: 15px;
+    }
+    &__link {
+        margin-top: 50px;
+        color: rgba($white, .6);
+        text-decoration: none;
+        &:hover {
+            color: $white;
+        }
+    }
+}
