@@ -1,9 +1,14 @@
 .team-section {
-    padding: 85px 0;
-    padding-top: 305px;
     background: image('team@2x.png') no-repeat center top / 100% auto;
+    &_no-bg {
+        background: none;
+    }
     &__header {
         margin-bottom: 110px;
+        &_vertical {
+            flex-direction: column;
+            align-items: flex-start;
+        }
     }
     &__grid {
         @include flex();
@@ -12,5 +17,8 @@
     &__item {
         width: 33.333%;
         margin-bottom: 75px;
+    }
+    & + .team-section {
+        padding-top: 0;
     }
 }

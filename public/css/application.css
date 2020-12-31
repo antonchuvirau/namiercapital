@@ -3811,14 +3811,6 @@ h1, h2, h3, h4, h5, h6 {
   height: 340px;
   margin: 0 auto; }
 
-.home {
-  position: relative; }
-  .home__portfolio {
-    position: absolute;
-    width: 100%;
-    left: 0;
-    top: -285px; }
-
 .section {
   padding: 135px 0; }
   .section__header {
@@ -3913,11 +3905,19 @@ h1, h2, h3, h4, h5, h6 {
               transform: scale(1.02); }
 
 .team-section {
-  padding: 85px 0;
-  padding-top: 305px;
   background: url("../img/team@2x.png") no-repeat center top/100% auto; }
+  .team-section_no-bg {
+    background: none; }
   .team-section__header {
     margin-bottom: 110px; }
+    .team-section__header_vertical {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-align: start;
+          -ms-flex-align: start;
+              align-items: flex-start; }
   .team-section__grid {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -3939,6 +3939,19 @@ h1, h2, h3, h4, h5, h6 {
   .team-section__item {
     width: 33.333%;
     margin-bottom: 75px; }
+  .team-section + .team-section {
+    padding-top: 0; }
+
+.home {
+  position: relative; }
+  .home__portfolio {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: -285px; }
+  .home__team {
+    padding: 85px 0;
+    padding-top: 305px; }
 
 .news-section {
   background: #023250;
@@ -4057,6 +4070,8 @@ h1, h2, h3, h4, h5, h6 {
     width: 100%;
     bottom: 0;
     left: 0; }
+  .wrapper_no-bg {
+    background: none; }
 
 .template-wrapper {
   height: 900px;
@@ -4090,9 +4105,9 @@ h1, h2, h3, h4, h5, h6 {
     max-width: 640px; }
     .template-wrapper__text p {
       margin: 0;
-      font-size: 2.4rem;
+      font-size: 2rem;
       color: rgba(255, 255, 255, 0.6);
-      line-height: 1.5; }
+      line-height: 1.65; }
     .template-wrapper__text_dark p {
       color: #222; }
   .template-wrapper__info {
@@ -4575,6 +4590,9 @@ h1, h2, h3, h4, h5, h6 {
 .role-section {
   background: url("../img/role@2x.jpg") no-repeat 50%/cover;
   padding-bottom: 150px; }
+
+.team-page {
+  background: url("../img/team-bg@2x.png") no-repeat center top/100% auto; }
 
 .button {
   display: inline-block;
