@@ -72,7 +72,9 @@
   'layout/we-section',
   'layout/criteria-section',
   'layout/matrix-section',
-  'layout/portfolio-template';
+  'layout/portfolio-template',
+  'layout/overview-section',
+  'layout/role-section';
 
 // 5. Components
 @import
@@ -86,7 +88,8 @@
   'components/title',
   'components/breadcrumbs',
   'components/filter',
-  'components/portfolio-item';
+  'components/portfolio-item',
+  'components/tags';
 
 // 6. Page-specific styles
 @import

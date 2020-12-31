@@ -36,6 +36,21 @@
         }
         &-text {
             margin-top: 20px;
+            padding-right: 40px;
+            & p {
+                margin: 0;
+                color: rgba($white, .6);
+                margin-bottom: 20px;
+                line-height: 1.45;
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+            & ul {
+                list-style-type: none;
+                padding: 0;
+                margin: 0;
+            }
             & li {
                 color: rgba($white, .6);
                 line-height: 1.5;
