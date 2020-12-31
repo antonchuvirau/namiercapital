@@ -3681,6 +3681,14 @@ h1, h2, h3, h4, h5, h6 {
     background: url("../img/icons/linkedin.svg") no-repeat 50%/20px auto;
     top: 50%;
     margin-top: -12px; }
+  .icon-email-dark::after {
+    background: url("../img/icons/email-dark.svg") no-repeat 50%/20px auto; }
+  .icon-address-dark::after {
+    background: url("../img/icons/address-dark.svg") no-repeat 50%/20px auto; }
+  .icon-linkedin-dark::after {
+    background: url("../img/icons/linkedin-dark.svg") no-repeat 50%/20px auto;
+    top: 50%;
+    margin-top: -12px; }
 
 .header {
   padding: 45px 0;
@@ -4702,6 +4710,55 @@ h1, h2, h3, h4, h5, h6 {
 .news-template__list-col {
   margin-top: 65px; }
 
+.contact-template__col {
+  padding: 135px 0; }
+
+.contact-template__grid {
+  position: relative; }
+
+.contact-template__map {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50%;
+  height: 100%; }
+
+.contact-template__title {
+  margin-bottom: 65px; }
+
+.contact-template__content-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-wrap: no-wrap;
+      flex-wrap: no-wrap;
+  margin-bottom: 45px; }
+  .contact-template__content-item:last-child {
+    margin-bottom: 0; }
+  .contact-template__content-item a, .contact-template__content-item span {
+    color: rgba(34, 34, 34, 0.6); }
+  .contact-template__content-item a {
+    text-decoration: none; }
+    .contact-template__content-item a:hover {
+      opacity: .8; }
+  .contact-template__content-item span:first-child {
+    font-size: 3.6rem;
+    font-family: "IBM Plex Sans", sans-serif;
+    font-weight: 600;
+    line-height: 1.22;
+    margin-bottom: 20px;
+    color: #222; }
+
 .button {
   display: inline-block;
   font-weight: 600;
@@ -5068,6 +5125,9 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 600;
   font-size: 6.4rem;
   line-height: 1.125; }
+  .title_m {
+    font-size: 5.2rem;
+    line-height: 1.15; }
 
 .breadcrumbs {
   display: -webkit-box;

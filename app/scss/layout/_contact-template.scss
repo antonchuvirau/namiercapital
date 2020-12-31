@@ -1,0 +1,46 @@
+.contact-template {
+    &__col {
+        padding: 135px 0;
+    }
+    &__grid {
+        position: relative;
+    }
+    &__map {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 50%;
+        height: 100%;
+    }
+    &__title {
+        margin-bottom: 65px;
+    }
+    &__content {
+        &-item {
+            @include flex(column);
+            margin-bottom: 45px;
+            &:last-child {
+                margin-bottom: 0;
+            }
+            & a, span {
+                color: rgba($black, .6);
+            }
+            & a {
+                text-decoration: none;
+                &:hover {
+                    opacity: .8;
+                }
+            }
+            & span {
+                &:first-child {
+                    font-size: 3.6rem;
+                    font-family: $secondary-font, sans-serif;
+                    font-weight: 600;
+                    line-height: 1.22;
+                    margin-bottom: 20px;
+                    color: $black;
+                }
+            }
+        }
+    }
+}

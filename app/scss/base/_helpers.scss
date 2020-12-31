@@ -36,4 +36,21 @@
             margin-top: -12px;
         }
     }
+    &-email-dark {
+        &::after {
+            background: icon('email-dark.svg') no-repeat 50% / 20px auto;
+        }
+    }
+    &-address-dark {
+        &::after {
+            background: icon('address-dark.svg') no-repeat 50% / 20px auto;
+        }
+    }
+    &-linkedin-dark {
+        &::after {
+            background: icon('linkedin-dark.svg') no-repeat 50% / 20px auto;
+            top: 50%;
+            margin-top: -12px;
+        }
+    }
 }
