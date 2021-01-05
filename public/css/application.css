@@ -4914,16 +4914,43 @@ h1, h2, h3, h4, h5, h6 {
             align-items: center;
     -ms-flex-wrap: no-wrap;
         flex-wrap: no-wrap;
-    width: 135px;
-    height: 135px;
+    width: 140px;
+    height: 140px;
     border-radius: 50%;
     background: rgba(255, 255, 255, 0.1);
-    margin: 0;
     margin-left: -67.7px;
     font-family: "IBM Plex Sans", sans-serif;
     line-height: 1.25;
     color: #fff;
+    text-decoration: none;
     text-align: center; }
+    .circles__item-name {
+      margin: 0;
+      -webkit-transition: opacity .25s ease-in-out;
+      -o-transition: opacity .25s ease-in-out;
+      transition: opacity .25s ease-in-out; }
+    .circles__item-text {
+      position: absolute;
+      top: 50%;
+      left: 0;
+      -webkit-transform: translateY(-50%);
+          -ms-transform: translateY(-50%);
+              transform: translateY(-50%);
+      -webkit-transition: opacity .25s ease-in-out;
+      -o-transition: opacity .25s ease-in-out;
+      transition: opacity .25s ease-in-out;
+      width: 100%;
+      opacity: 0; }
+      .circles__item-text p {
+        margin: 0 auto;
+        font-size: 1.4rem;
+        line-height: 1.35;
+        text-align: center;
+        max-width: 130px; }
+    .circles__item:hover .circles__item-name {
+      opacity: 0; }
+    .circles__item:hover .circles__item-text {
+      opacity: 1; }
     .circles__item:nth-child(2) {
       top: auto;
       left: auto;

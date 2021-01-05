@@ -10,16 +10,48 @@
         top: -67.5px;
         left: 50%;
         @include flex(row, center, center);
-        width: 135px;
-        height: 135px;
+        width: 140px;
+        height: 140px;
         border-radius: 50%;
         background: rgba($white, .1);
-        margin: 0;
         margin-left: -67.7px;
         font-family: $secondary-font, sans-serif;
         line-height: 1.25;
         color: $white;
+        text-decoration: none;
         text-align: center;
+        &-name {
+            margin: 0;
+            transition: opacity .25s ease-in-out;
+        }
+        &-text {
+            position: absolute;
+            top: 50%;
+            left: 0;
+            transform: translateY(-50%);
+            transition: opacity .25s ease-in-out;
+            width: 100%;
+            opacity: 0;
+            & p {
+                margin: 0 auto;
+                font-size: 1.4rem;
+                line-height: 1.35;
+                text-align: center;
+                max-width: 130px;
+            }
+        }
+        &:hover {
+            & .circles {
+                &__item {
+                    &-name {
+                        opacity: 0;
+                    }
+                    &-text {
+                        opacity: 1;
+                    }
+                }
+            }
+        }
         &:nth-child(2) {
             top: auto;
             left: auto;
