@@ -43,6 +43,10 @@
             text-decoration: none;
             color: $white;
             cursor: pointer;
+            &_active {
+                color: $primary;
+                pointer-events: none;
+            }
             &:hover {
                 color: $primary;
             }

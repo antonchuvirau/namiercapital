@@ -1,9 +1,11 @@
 .sub-menu {
     position: absolute;
     top: 100%;
-    left: 0;
+    left: -20px;
+    padding: 20px;
     padding-top: 25px;
     transform: translate3d(0, 5px, 0);
+    background: $secondary;
     transition: opacity .25s ease, transform .25s ease;
     opacity: 0;
     pointer-events: none;
@@ -15,6 +17,10 @@
         color: $white;
         &:hover {
             color: $primary;
+        }
+        &_active {
+            color: $primary;
+            pointer-events: none;
         }
     }
     &__item {
