@@ -4079,6 +4079,12 @@ h1, h2, h3, h4, h5, h6 {
 .about-template__title {
   margin-bottom: 65px; }
 
+.about-template__grid {
+  background: url("../img/about.png") no-repeat center bottom/cover; }
+
+.about-template__contact {
+  background: url("../img/contact-with-effect.png") no-repeat center top/cover; }
+
 .wrapper {
   position: relative;
   background: url("../img/home@2x.jpg") no-repeat 50%/cover;
@@ -4938,10 +4944,9 @@ h1, h2, h3, h4, h5, h6 {
     text-decoration: none;
     text-align: center; }
     .circles__item-name {
-      margin: 0;
-      -webkit-transition: opacity .25s ease-in-out;
-      -o-transition: opacity .25s ease-in-out;
-      transition: opacity .25s ease-in-out; }
+      font-family: "IBM Plex Sans";
+      font-weight: 500;
+      margin: 0; }
     .circles__item-text {
       position: absolute;
       top: 50%;
@@ -4949,21 +4954,23 @@ h1, h2, h3, h4, h5, h6 {
       -webkit-transform: translateY(-50%);
           -ms-transform: translateY(-50%);
               transform: translateY(-50%);
-      -webkit-transition: opacity .25s ease-in-out;
-      -o-transition: opacity .25s ease-in-out;
-      transition: opacity .25s ease-in-out;
       width: 100%;
       opacity: 0; }
       .circles__item-text p {
+        font-family: "IBM Plex Sans";
         margin: 0 auto;
-        font-size: 1.4rem;
-        line-height: 1.35;
+        font-size: 1.2rem;
+        font-weight: 500;
+        line-height: 1.45;
         text-align: center;
-        max-width: 130px; }
-    .circles__item:hover .circles__item-name {
-      opacity: 0; }
-    .circles__item:hover .circles__item-text {
-      opacity: 1; }
+        max-width: 110px;
+        color: #023250; }
+    .circles__item:hover {
+      background: #fff; }
+      .circles__item:hover .circles__item-name {
+        opacity: 0; }
+      .circles__item:hover .circles__item-text {
+        opacity: 1; }
     .circles__item:nth-child(2) {
       top: auto;
       left: auto;

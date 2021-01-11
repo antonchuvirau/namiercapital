@@ -2,4 +2,10 @@
     &__title {
         margin-bottom: 65px;
     }
+    &__grid {
+        background: image('about.png') no-repeat center bottom / cover;
+    }
+    &__contact {
+        background: image('contact-with-effect.png') no-repeat center top / cover;
+    }
 }
