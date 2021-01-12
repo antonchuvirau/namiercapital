@@ -41,7 +41,8 @@
 
 // 2. Vendors
 @import
-  'vendors/normalize';
+  'vendors/normalize',
+  'vendors/jquerymodal';
 
 // 3. Base stuff
 @import
@@ -98,7 +99,8 @@
   'components/filter',
   'components/portfolio-item',
   'components/tags',
-  'components/team-member-info';
+  'components/team-member-info',
+  'components/modal';
 
 // 6. Page-specific styles
 @import

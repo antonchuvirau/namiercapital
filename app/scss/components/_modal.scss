@@ -1,0 +1,37 @@
+.modal {
+    box-shadow: none;
+    max-width: 625px;
+    border-radius: 0;
+    &__title {
+        margin: 0;
+        font-family: $secondary-font;
+        font-size: 6.4rem;
+        font-weight: 600;
+        color: $black;
+        text-align: center;
+    }
+    &__link {
+        display: block;
+        width: 100%;
+        max-width: 400px;
+        margin: 0 auto;
+        margin-top: 60px;
+        line-height: 48px;
+        text-align: center;
+    }
+    & a.close-modal {
+        width: 30px;
+        height: 30px;
+        top: 30px;
+        right: 30px;
+        background: icon('close.svg') no-repeat 50% / 30px auto;
+    }
+}
+
+.contact-form-modal {
+    padding: 155px 30px;
+}
+
+.blocker {
+    background: rgba($black, .3);
+}

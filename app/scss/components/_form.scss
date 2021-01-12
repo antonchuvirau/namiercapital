@@ -14,9 +14,13 @@
         padding: 0 20px;
         height: 50px;
         background: $light;
+        border: 1px solid transparent;
         width: 100%;
         &:focus {
             background: darken($light, 2%);
+        }
+        &.wpcf7-not-valid {
+            border-color: red;
         }
     }
     &__textarea {
@@ -54,5 +58,19 @@
     &__button {
         width: 100%;
         margin-top: 15px;
+        &_in-progress {
+            opacity: .6;
+            pointer-events: none;
+        }
     }
+}
+
+.wpcf7-not-valid-tip {
+    display: none;
+    // font-size: 1.1rem;
+    // margin-top: 3px;
+}
+
+.wpcf7 form .wpcf7-response-output {
+    display: none !important;
 }
