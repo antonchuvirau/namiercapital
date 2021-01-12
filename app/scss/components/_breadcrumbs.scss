@@ -1,6 +1,6 @@
 .breadcrumbs {
     @include flex(row, center);
-    & p {
+    & span {
         margin: 0;
         color: rgba($white, .6);
     }
@@ -30,7 +30,7 @@
                 background: icon('breadcrumbs-arrow-dark.svg') no-repeat 50%;
             }
         }
-        & p {
+        & span {
             color: rgba($black, .6);
         }
     }

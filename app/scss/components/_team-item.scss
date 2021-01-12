@@ -1,5 +1,6 @@
 .team-item {
     @include flex(row, center);
+    text-decoration: none;
     &__img {
         max-width: 120px;
         max-height: 120px;
@@ -13,6 +14,7 @@
         font-size: 2rem;
         font-weight: 600;
         line-height: 1.25;
+        color: $black;
     }
     &__position {
         display: block;
