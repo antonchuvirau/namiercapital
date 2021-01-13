@@ -5118,13 +5118,13 @@ h1, h2, h3, h4, h5, h6 {
         opacity: 0; }
       .circles__item:hover .circles__item-text {
         opacity: 1; }
-    .circles__item:nth-child(2) {
+    .circles__item:nth-child(3) {
       top: auto;
       left: auto;
       right: -40px;
       bottom: 20px;
       margin: 0; }
-    .circles__item:nth-child(3) {
+    .circles__item:nth-child(4) {
       left: -40px;
       bottom: 20px;
       top: auto;
@@ -5744,10 +5744,10 @@ h1, h2, h3, h4, h5, h6 {
     .circles__item-name {
       position: relative;
       top: -3px; }
-    .circles__item:nth-child(2) {
+    .circles__item:nth-child(3) {
       right: -25px;
       bottom: 20px; }
-    .circles__item:nth-child(3) {
+    .circles__item:nth-child(4) {
       left: -25px; }
   .section {
     padding: 65px 0;
