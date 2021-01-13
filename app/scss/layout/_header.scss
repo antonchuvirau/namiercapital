@@ -15,6 +15,14 @@
             left: 0;
         }
     }
+    &_active {
+        background: $secondary;
+        &.header {
+            &_dark {
+                background: $white;
+            }
+        }
+    }
     &__logo {
         display: inline-block;
         &-img {
@@ -31,5 +39,11 @@
     }
     &__mobile-option {
         @include flex(row, flex-start, flex-end);
+    }
+    &__mobile-menu-button {
+        transition: transform .25s ease-in-out;
+        & svg {
+            pointer-events: none;
+        }
     }
 }

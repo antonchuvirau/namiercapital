@@ -14,6 +14,7 @@
         padding: 85px 75px;
         background: image('mask@2x.png') no-repeat 50% / cover;
         &-note {
+            margin: 0;
             text-transform: uppercase;
             letter-spacing: .16em;
             color: rgba($white, .8);

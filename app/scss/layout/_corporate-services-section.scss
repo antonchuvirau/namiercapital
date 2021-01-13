@@ -1,10 +1,16 @@
 .corporate-services-section {
     padding: 135px 0;
     padding-bottom: 75px;
+    &__grid {
+        @include flex(row, flex-start, center);
+        flex-wrap: wrap;
+    }
     &__header {
         justify-content: center;
     }
     &__col {
+        width: calc(100% / 6);
+        padding: 0 15px;
         @include flex(column, center);
         margin-bottom: 65px;
         &-name {
