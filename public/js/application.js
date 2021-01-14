@@ -129,6 +129,12 @@ function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "functi
 });
 'use strict';
 
+function _createForOfIteratorHelper(o, allowArrayLike) { var it; if (typeof Symbol === "undefined" || o[Symbol.iterator] == null) { if (Array.isArray(o) || (it = _unsupportedIterableToArray(o)) || allowArrayLike && o && typeof o.length === "number") { if (it) o = it; var i = 0; var F = function F() {}; return { s: F, n: function n() { if (i >= o.length) return { done: true }; return { done: false, value: o[i++] }; }, e: function e(_e) { throw _e; }, f: F }; } throw new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); } var normalCompletion = true, didErr = false, err; return { s: function s() { it = o[Symbol.iterator](); }, n: function n() { var step = it.next(); normalCompletion = step.done; return step; }, e: function e(_e2) { didErr = true; err = _e2; }, f: function f() { try { if (!normalCompletion && it["return"] != null) it["return"](); } finally { if (didErr) throw err; } } }; }
+
+function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
+
+function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
+
 function onFormSubmitHandler(evt) {
   var target = evt.target;
   var formSubmitButton = target.querySelector("button[type=\"submit\"]");
@@ -166,6 +172,92 @@ function onMobileMenuOpenButtonClickHandler() {
 
   mobileMenuOpenButton.classList.toggle("header__mobile-menu-button_active");
   navigationElement.classList.toggle("header__navigation_open");
+}
+
+function resetFilter(filterElements) {
+  var _iterator = _createForOfIteratorHelper(filterElements),
+      _step;
+
+  try {
+    for (_iterator.s(); !(_step = _iterator.n()).done;) {
+      var filterElement = _step.value;
+      filterElement.classList.remove("d-none");
+    }
+  } catch (err) {
+    _iterator.e(err);
+  } finally {
+    _iterator.f();
+  }
+}
+
+function filter(filteredElement, filterElements) {
+  var _iterator2 = _createForOfIteratorHelper(filterElements),
+      _step2;
+
+  try {
+    for (_iterator2.s(); !(_step2 = _iterator2.n()).done;) {
+      var filterElement = _step2.value;
+      var filterElementTags = filterElement.dataset.tags.split(', ');
+
+      if (!filterElementTags.includes(filteredElement, 0)) {
+        filterElement.classList.add("d-none");
+      }
+    }
+  } catch (err) {
+    _iterator2.e(err);
+  } finally {
+    _iterator2.f();
+  }
+}
+
+function onFilterContainerClickHandler(evt) {
+  var target = evt.target;
+  var filterElements = document.querySelectorAll("[data-tags]");
+  var targetFilterValue = target.textContent;
+
+  if (target.matches("button")) {
+    if (target.classList.contains("filter__button_active")) {
+      var _iterator3 = _createForOfIteratorHelper(filterButtons),
+          _step3;
+
+      try {
+        for (_iterator3.s(); !(_step3 = _iterator3.n()).done;) {
+          var filterButton = _step3.value;
+          filterButton.classList.remove("filter__button_disable");
+        }
+      } catch (err) {
+        _iterator3.e(err);
+      } finally {
+        _iterator3.f();
+      }
+
+      target.classList.remove("filter__button_active"); // Reset filter
+
+      resetFilter(filterElements);
+    } else {
+      var _iterator4 = _createForOfIteratorHelper(filterButtons),
+          _step4;
+
+      try {
+        for (_iterator4.s(); !(_step4 = _iterator4.n()).done;) {
+          var _filterButton = _step4.value;
+
+          _filterButton.classList.add("filter__button_disable");
+
+          _filterButton.classList.remove("filter__button_active");
+        }
+      } catch (err) {
+        _iterator4.e(err);
+      } finally {
+        _iterator4.f();
+      }
+
+      target.classList.remove("filter__button_disable");
+      target.classList.add("filter__button_active"); // Init filter
+
+      filter(targetFilterValue, filterElements);
+    }
+  }
 } // Variables
 
 
@@ -174,10 +266,13 @@ var wpcf7form = document.querySelector(".wpcf7");
 var fileFormInput = document.querySelector("input[type=\"file\"]");
 var mobileMenuOpenButton = document.querySelector(".header__mobile-menu-button");
 var navigationElement = document.querySelector(".header__navigation");
-var headerStickyElement = document.querySelector(".header_sticky"); // Events
+var headerStickyElement = document.querySelector(".header_sticky");
+var filterContainer = document.querySelector(".filter");
+var filterButtons = document.querySelectorAll(".filter__button"); // Events
 
 form.addEventListener("submit", onFormSubmitHandler);
 wpcf7form.addEventListener("wpcf7invalid", resetInProgressFormStyles);
 wpcf7form.addEventListener("wpcf7mailsent", onFormMailSentHandler);
 fileFormInput.addEventListener("change", onFileFormInputChangeHandler, false);
 mobileMenuOpenButton.addEventListener("click", onMobileMenuOpenButtonClickHandler);
+filterContainer.addEventListener("click", onFilterContainerClickHandler);

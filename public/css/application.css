@@ -4753,7 +4753,9 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 65px; }
 
 .portfolio-template__filter {
-  margin-bottom: 50px; }
+  overflow-x: auto;
+  padding-bottom: 20px;
+  margin-bottom: 30px; }
 
 .portfolio-template__list {
   display: -webkit-box;
@@ -5411,7 +5413,8 @@ h1, h2, h3, h4, h5, h6 {
     margin-right: 40px;
     color: rgba(34, 34, 34, 0.6);
     line-height: 1.5;
-    position: relative; }
+    position: relative;
+    white-space: nowrap; }
     .filter__button_active {
       padding-right: 20px;
       color: #09B9B9; }
@@ -5423,6 +5426,9 @@ h1, h2, h3, h4, h5, h6 {
         background: url("../img/icons/remove.svg") no-repeat 50%;
         bottom: 4px;
         right: 0; }
+    .filter__button_disable {
+      pointer-events: none;
+      opacity: .5; }
     .filter__button:hover {
       color: #09B9B9; }
 
@@ -6140,14 +6146,8 @@ h1, h2, h3, h4, h5, h6 {
     .portfolio-template__list-item {
       width: 50%;
       height: 300px; }
-  .portfolio-template__filter {
-    overflow-x: auto;
-    padding-bottom: 20px;
-    margin-bottom: 30px; }
   .portfolio-template__grid {
     padding-bottom: 100px; }
-  .filter__button {
-    white-space: nowrap; }
   .team-member-info__img {
     max-width: 170px; }
   .team-member-info__content {

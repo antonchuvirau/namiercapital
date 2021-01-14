@@ -5,6 +5,7 @@
         color: rgba($black, .6);
         line-height: 1.5;
         position: relative;
+        white-space: nowrap;
         &_active {
             padding-right: 20px;
             color: $primary;
@@ -17,6 +18,10 @@
                 bottom: 4px;
                 right: 0;
             }
+        }
+        &_disable {
+            pointer-events: none;
+            opacity: .5;
         }
         &:hover {
             color: $primary;
