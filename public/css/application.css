@@ -3998,9 +3998,12 @@ h1, h2, h3, h4, h5, h6 {
       .section__header-desc_light {
         color: rgba(255, 255, 255, 0.6); }
     .section__header-title {
+      font-family: "IBM Plex Sans", sans-serif;
+      font-weight: 600;
       font-size: 5.2rem;
       color: #fff;
-      line-height: 1; }
+      line-height: 1;
+      margin: 0; }
       .section__header-title_dark {
         color: #222; }
 
@@ -4926,6 +4929,93 @@ h1, h2, h3, h4, h5, h6 {
   .page-template__desc a {
     color: rgba(9, 185, 185, 0.6);
     text-decoration: none; }
+
+.article-template__title {
+  margin-top: 50px;
+  max-width: 950px;
+  margin-bottom: 30px; }
+
+.article-template__meta {
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: no-wrap;
+      flex-wrap: no-wrap; }
+  .article-template__meta span {
+    margin-right: 15px; }
+    .article-template__meta span:last-child {
+      margin-right: 0; }
+
+.article-template__image {
+  width: 100%;
+  height: 41.67vw;
+  max-height: 600px;
+  margin-top: 80px; }
+  .article-template__image img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover; }
+
+.article-template__content {
+  padding: 75px 0; }
+  .article-template__content h2, .article-template__content h3, .article-template__content h4, .article-template__content h5, .article-template__content h6 {
+    margin-top: 30px; }
+    .article-template__content h2:first-child, .article-template__content h3:first-child, .article-template__content h4:first-child, .article-template__content h5:first-child, .article-template__content h6:first-child {
+      margin-top: 0; }
+  .article-template__content h2 {
+    font-size: 5.2rem; }
+  .article-template__content h3 {
+    font-size: 4rem; }
+  .article-template__content h4 {
+    font-size: 3.6rem; }
+  .article-template__content h5, .article-template__content h6 {
+    font-size: 3rem; }
+  .article-template__content p {
+    margin: 0;
+    line-height: 1.65;
+    font-size: 1.8rem;
+    margin-top: 25px;
+    max-width: 810px; }
+    .article-template__content p:first-child {
+      margin-top: 0; }
+  .article-template__content ul, .article-template__content ol {
+    margin: 0;
+    margin-top: 25px; }
+    .article-template__content ul li, .article-template__content ol li {
+      line-height: 1.65;
+      font-size: 1.8rem;
+      margin-top: 10px; }
+      .article-template__content ul li:first-child, .article-template__content ol li:first-child {
+        margin-top: 0; }
+  .article-template__content a {
+    text-decoration: none;
+    font-size: 1.8rem;
+    color: #09B9B9; }
+  .article-template__content iframe {
+    width: 100%;
+    height: 31.25vw;
+    max-height: 600px; }
+
+.article-template__grid {
+  padding-top: 60px; }
+
+.similar-section {
+  padding: 0;
+  padding-bottom: 75px;
+  background: none; }
 
 .button {
   display: inline-block;
@@ -6187,7 +6277,34 @@ h1, h2, h3, h4, h5, h6 {
     .contact-template__content-item:last-child {
       margin-bottom: 0; }
     .contact-template__content-item span:first-child {
-      font-size: 2.8rem; } }
+      font-size: 2.8rem; }
+  .similar-section {
+    padding-top: 50px; }
+  .article-template__grid {
+    padding-top: 40px;
+    padding-bottom: 0; }
+  .article-template__image {
+    margin-top: 50px; }
+  .article-template__content {
+    padding-bottom: 0; }
+    .article-template__content h2 {
+      font-size: 3.6rem; }
+    .article-template__content h3 {
+      font-size: 2.8rem; }
+    .article-template__content h4 {
+      font-size: 2.2rem; }
+    .article-template__content h5, .article-template__content h6 {
+      font-size: 2rem; }
+    .article-template__content p {
+      font-size: 1.6rem; }
+    .article-template__content ul li, .article-template__content ol li {
+      font-size: 1.6rem; }
+    .article-template__content a {
+      font-size: 1.6rem; }
+    .article-template__content img {
+      display: block; }
+    .article-template__content iframe {
+      height: 41.25vw; } }
 
 @media screen and (max-width: 991px) {
   .news-item__img_big {

@@ -37,9 +37,12 @@
             }
         }
         &-title {
+            font-family: $secondary-font, sans-serif;
+            font-weight: 600;
             font-size: 5.2rem;
             color: $white;
             line-height: 1;
+            margin: 0;
             &_dark {
                 color: $black;
             }
