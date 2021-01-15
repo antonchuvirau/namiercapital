@@ -270,9 +270,17 @@ var headerStickyElement = document.querySelector(".header_sticky");
 var filterContainer = document.querySelector(".filter");
 var filterButtons = document.querySelectorAll(".filter__button"); // Events
 
-form.addEventListener("submit", onFormSubmitHandler);
-wpcf7form.addEventListener("wpcf7invalid", resetInProgressFormStyles);
-wpcf7form.addEventListener("wpcf7mailsent", onFormMailSentHandler);
-fileFormInput.addEventListener("change", onFileFormInputChangeHandler, false);
-mobileMenuOpenButton.addEventListener("click", onMobileMenuOpenButtonClickHandler);
-filterContainer.addEventListener("click", onFilterContainerClickHandler);
+document.addEventListener("DOMContentLoaded", function () {
+  mobileMenuOpenButton.addEventListener("click", onMobileMenuOpenButtonClickHandler);
+
+  if (form) {
+    form.addEventListener("submit", onFormSubmitHandler);
+    wpcf7form.addEventListener("wpcf7invalid", resetInProgressFormStyles);
+    wpcf7form.addEventListener("wpcf7mailsent", onFormMailSentHandler);
+    fileFormInput.addEventListener("change", onFileFormInputChangeHandler, false);
+  }
+
+  if (filterContainer) {
+    filterContainer.addEventListener("click", onFilterContainerClickHandler);
+  }
+});
