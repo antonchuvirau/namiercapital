@@ -1,6 +1,7 @@
 .filter {
-    @include flex(row, center);
+    @include flex(row, center, flex-start, wrap);
     &__button {
+        padding: 3px 0;
         margin-right: 40px;
         color: rgba($black, .6);
         line-height: 1.5;
@@ -15,7 +16,7 @@
                 width: 12px;
                 height: 12px;
                 background: icon('remove.svg') no-repeat 50%;
-                bottom: 4px;
+                bottom: 7.5px;
                 right: 0;
             }
         }

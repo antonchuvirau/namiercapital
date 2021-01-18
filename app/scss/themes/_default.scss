@@ -285,9 +285,6 @@
                 font-size: 1.5rem;
             }
         }
-        &__tags {
-            display: none;
-        }
     }
     .template {
         &__grid {
@@ -624,9 +621,7 @@
     }
     .news-template {
         &__filter {
-            overflow-x: auto;
-            padding-bottom: 20px;
-            margin-bottom: 30px;
+            margin-bottom: 50px;
         }
     }
     .contact-template {
@@ -714,6 +709,24 @@
             }
         }
     }
+    .portfolio-item {
+        &__icon {
+            opacity: 0;
+        }
+        &__content {
+            transform: none;
+            opacity: 1;
+        }
+    }
+}
+@media screen and (max-width: 767px) {
+    .portfolio-template {
+        &__list {
+            &-item {
+                width: 100%;
+            }
+        }
+    }
 }
 @media screen and (max-width: 575px) {
     .navigation {
@@ -737,11 +750,11 @@
             }
         }
     }
-    .portfolio-template {
-        &__list {
-            &-item {
-                width: 100%;
-                height: 250px;
+    .filter {
+        &__button {
+            margin-right: 20px;
+            &:last-child {
+                margin-right: 0;
             }
         }
     }

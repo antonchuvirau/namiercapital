@@ -40,11 +40,10 @@
                 line-height: 1.45;
                 text-align: center;
                 max-width: 110px;
-                color: $secondary;
+                color: $white;
             }
         }
         &:hover {
-            background: $white;
             & .circles {
                 &__item {
                     &-name {
