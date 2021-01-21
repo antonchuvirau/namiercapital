@@ -1,5 +1,6 @@
 .team-member-info {
     @include flex(row, center);
+    padding-bottom: 135px;
     &__img {
         max-width: 300px;
         max-height: 300px;

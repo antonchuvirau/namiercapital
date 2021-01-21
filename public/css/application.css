@@ -5016,6 +5016,24 @@ h1, h2, h3, h4, h5, h6 {
   padding-bottom: 75px;
   background: none; }
 
+.team-template-wrapper {
+  height: auto;
+  background-size: 100% auto;
+  background-position: center -100px;
+  padding-bottom: 0; }
+
+@media screen and (max-width: 1229px) {
+  .team-template-wrapper {
+    background-position: center -50px; } }
+
+@media screen and (max-width: 991px) {
+  .team-template-wrapper {
+    background-size: auto;
+    background-position: center -200px; } }
+
+.team-template {
+  padding-top: 135px; }
+
 .button {
   display: inline-block;
   font-weight: 600;
@@ -5684,7 +5702,8 @@ h1, h2, h3, h4, h5, h6 {
       -ms-flex-align: center;
           align-items: center;
   -ms-flex-wrap: no-wrap;
-      flex-wrap: no-wrap; }
+      flex-wrap: no-wrap;
+  padding-bottom: 135px; }
   .team-member-info__img {
     max-width: 300px;
     max-height: 300px;

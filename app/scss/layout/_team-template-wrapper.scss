@@ -1,0 +1,19 @@
+.team-template-wrapper {
+    height: auto;
+    background-size: 100% auto;
+    background-position: center -100px;
+    padding-bottom: 0;
+}
+
+@media screen and (max-width: 1229px) {
+    .team-template-wrapper {
+        background-position: center -50px;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .team-template-wrapper {
+        background-size: auto;
+        background-position: center -200px;
+    }
+}
