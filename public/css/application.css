@@ -4521,17 +4521,17 @@ h1, h2, h3, h4, h5, h6 {
       right: calc(100% + 45px);
       top: 63.5%;
       max-width: 215px; }
-    .selection-section__item:nth-child(5) {
-      text-align: left;
-      left: calc(100% + 45px);
-      max-width: 310px;
-      top: .5%; }
     .selection-section__item:nth-child(6) {
       text-align: left;
       left: calc(100% + 45px);
       max-width: 310px;
-      top: 26%; }
+      top: .5%; }
     .selection-section__item:nth-child(7) {
+      text-align: left;
+      left: calc(100% + 45px);
+      max-width: 310px;
+      top: 26%; }
+    .selection-section__item:nth-child(8) {
       text-align: left;
       left: calc(100% + 45px);
       top: 51.5%;
@@ -6068,11 +6068,11 @@ h1, h2, h3, h4, h5, h6 {
       background: url("../img/criteria/criteria-2.svg") no-repeat 50%/45px auto; }
     .selection-section__item:nth-child(3)::before {
       background: url("../img/criteria/criteria-3.svg") no-repeat 50%/45px auto; }
-    .selection-section__item:nth-child(5)::before {
-      background: url("../img/criteria/criteria-4.svg") no-repeat 50%/45px auto; }
     .selection-section__item:nth-child(6)::before {
-      background: url("../img/criteria/criteria-5.svg") no-repeat 50%/45px auto; }
+      background: url("../img/criteria/criteria-4.svg") no-repeat 50%/45px auto; }
     .selection-section__item:nth-child(7)::before {
+      background: url("../img/criteria/criteria-5.svg") no-repeat 50%/45px auto; }
+    .selection-section__item:nth-child(8)::before {
       background: url("../img/criteria/criteria-6.svg") no-repeat 50%/45px auto; }
     .selection-section__item::before {
       content: '';
