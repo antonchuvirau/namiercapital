@@ -5829,7 +5829,7 @@ h1, h2, h3, h4, h5, h6 {
       line-height: 1.2; }
   .wrapper {
     padding: 150px 0;
-    padding-bottom: 385px; }
+    padding-bottom: 450px; }
   .hero__title {
     font-size: 4.4rem;
     line-height: 1.1; }
@@ -5877,15 +5877,16 @@ h1, h2, h3, h4, h5, h6 {
   .home__team {
     background-size: cover; }
   .home__portfolio {
-    padding: 0; }
+    padding: 0;
+    top: -345px; }
   .portfolio-section__grid {
     overflow-x: auto;
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
     padding-bottom: 15px; }
   .portfolio-section__item {
-    width: 260px;
-    height: 200px;
+    height: 260px;
+    width: 55%;
     -ms-flex-negative: 0;
         flex-shrink: 0; }
   .team-section__grid {
@@ -5922,7 +5923,9 @@ h1, h2, h3, h4, h5, h6 {
         flex-wrap: nowrap;
     padding-bottom: 15px; }
   .news-section__item {
-    width: 260px; }
+    width: 260px;
+    -ms-flex-negative: 0;
+        flex-shrink: 0; }
   .news-item__img {
     height: 200px; }
     .news-item__img_big {
@@ -5932,6 +5935,8 @@ h1, h2, h3, h4, h5, h6 {
     padding-top: 15px; }
     .news-item__content_big {
       padding-left: 30px; }
+  .news-item__title {
+    font-size: 2rem; }
   .contact-section {
     padding: 0;
     background: none; }
@@ -6327,11 +6332,15 @@ h1, h2, h3, h4, h5, h6 {
     padding-left: 0; }
   .portfolio-item__icon {
     opacity: 0; }
+    .portfolio-item__icon.lazyloaded {
+      opacity: 0; }
   .portfolio-item__content {
     -webkit-transform: none;
         -ms-transform: none;
             transform: none;
-    opacity: 1; } }
+    opacity: 1; }
+  .portfolio-section__item {
+    width: 75%; } }
 
 @media screen and (max-width: 767px) {
   .portfolio-template__list-item {

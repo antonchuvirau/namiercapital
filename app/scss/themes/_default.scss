@@ -65,7 +65,7 @@
     }
     .wrapper {
         padding: 150px 0;
-        padding-bottom: 385px;
+        padding-bottom: 450px;
     }
     .hero {
         &__title {
@@ -138,6 +138,7 @@
         }
         &__portfolio {
             padding: 0;
+            top: -345px;
         }
     }
     .portfolio-section {
@@ -147,8 +148,8 @@
             padding-bottom: 15px;
         }
         &__item {
-            width: 260px;
-            height: 200px;
+            height: 260px;
+            width: 55%;
             flex-shrink: 0;
         }
     }
@@ -191,6 +192,7 @@
         }
         &__item {
             width: 260px;
+            flex-shrink: 0;
         }
     }
     .news-item {
@@ -206,6 +208,9 @@
             &_big {
                 padding-left: 30px;
             }
+        }
+        &__title {
+            font-size: 2rem;
         }
     }
     .contact-section {
@@ -712,10 +717,18 @@
     .portfolio-item {
         &__icon {
             opacity: 0;
+            &.lazyloaded {
+                opacity: 0;
+            }
         }
         &__content {
             transform: none;
             opacity: 1;
+        }
+    }
+    .portfolio-section {
+        &__item {
+            width: 75%;
         }
     }
 }
